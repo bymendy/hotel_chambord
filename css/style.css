@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+/* COMMON CLASS */
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+
+.border {
+    border: solid red 2px;
+}
+
+body {
+    /* height: 100vh; */
+    /* background: tomato !important; */
+}
+
+/* HEADER */
+
+.img1 {
+    background: url(/img/hall_hotel.jpg) top/cover !important;
+    height: 100vh;
+}
