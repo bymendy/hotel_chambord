@@ -142,12 +142,10 @@ nav li:hover ul {
 
 
 .cover-image {
-    background-image: url(/img/hotel.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 45px;
     width: 100vw;
-    height: 80vh;
 }
 
 .titre-1 {
@@ -220,7 +218,6 @@ section.style {
     color: #000000;
     /* width: 100vw; */
     padding:  2rem;
-
 }
 .style {
     margin-top: 10px;
@@ -253,6 +250,12 @@ section.style {
 
 .carousel {
     margin: auto;
+}
+.prev {
+    display: none;
+}
+.next {
+    display: none;
 }
 .button-spa {
     text-decoration: none;
