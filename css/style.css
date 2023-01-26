@@ -20,7 +20,7 @@ ul {
 .justify-start {
     justify-content: flex-start;
 }
-.container {
+.contenu {
     position: relative;
     margin-bottom: 20px;
 }
@@ -32,6 +32,11 @@ ul {
 }
 .text-color2 {
     color: #403833;
+}
+.font-text {
+    font-size: 12px;
+    text-align: center;
+
 }
 /* ul {
     margin: auto;
@@ -79,18 +84,70 @@ ul {
   
 /************ HEADER ************/
 /* Nav bar */
-#nav-modif {
+/* #nav-modif {
     opacity: 1;
     background: #FFFFFF;
     color: #F4F1EB;
+} */
+
+/* **************** 1 ********************** */
+nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.bar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
   
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+nav li {
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover {
+    background-color: #111;
+}
+  
+nav li ul {
+    display: none;
+}
+  
+nav li:hover ul {
+    display: block;
+}
 
 
 .cover-image {
     background-image: url(/img/hotel.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 45px;
+    width: 100vw;
+    height: 80vh;
 }
 
 .titre-1 {
@@ -234,60 +291,87 @@ section.style {
 form {
     margin: 16px;
     padding: 16px;
-  }
+}
   
-  label {
+label {
     font-size: 14px;
     font-weight: bold;
-  }
+}
   
-  input[type="email"] {
+input[type="email"] {
     padding: 8px;
     font-size: 16px;
     margin-bottom: 8px;
-  }
+}
   
-  input[type="submit"] {
+input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
-  }
-  .read-more {
+}
+.read-more {
     text-decoration: none;
     color: #403833;
-  }
+}
 
-  /* FOOTER */
+/* FOOTER */
 
-  footer {
+footer {
     background-color: #333333;
     color: white;
     font-size: 14px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
-  }
+}
   
   footer nav ul li {
     display: inline-block;
     margin-right: 10px;
-  }
+}
   
   footer .social-links a {
     color: white;
     font-size: 20px;
     margin-right: 10px;
-  }
+}
   
-  @media (max-width: 600px) {
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .navbar-nav {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #333;
+      height: 100vh;
+      width: 100%;
+      padding-top: 3.5rem;
+      transition: all 0.3s ease-out;
+      transform: translateX(100%);
+    }
+  
+    .navbar-nav.active {
+      transform: translateX(0%);
+    }
+  
+    .nav-item {
+      margin: 0.5rem 0;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+}
+@media (max-width: 600px) {
     footer {
-      flex-wrap: wrap;
+     flex-wrap: wrap;
     }
     footer nav, .social-links, .copyright {
-      width: 100%;
-      text-align: center;
+     width: 100%;
+     text-align: center;
     }
-  }
+}
   

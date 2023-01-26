@@ -11,7 +11,7 @@
     <body>
         <header>
             <!-- Nav Bar -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-modif">
+            <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-modif">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Navbar</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,12 +46,41 @@
                     </form>
                   </div>
                 </div>
+            </nav> -->
+
+            <nav class="bar-nav">
+
+                <div >                 
+                    <ul class="font-text">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">À propos</a>
+                        <ul>
+                        <li><a href="#">Qui sommes nous?</a></li>
+                        <li><a href="#">Nos Avis</a></li>
+                        <li><a href="#">Recrutement</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Services</a>
+                        <ul>
+                        <li><a href="#">Nos séjours</a></li>
+                        <li><a href="#">Spa et bien-être</a></li>
+                        <li><a href="#">Restaurant et cartes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    </ul>
+
+                </div>
             </nav>
 
 
               
 
-            <div class="cover-image container" >
+
+
+              
+
+            <div class="cover-image contenu" >
                 <div class="titre-1">
                     <h1 class="text-center">L’hôtel Chambord</h1>
                 </div>
@@ -117,7 +146,7 @@
             </div>
 
             <!-- Spa -->
-            <section class="container ">
+            <section class="contenu ">
                 <div>
                     <h2 class="big-title text-center p1">Spa</h2>
                     <div class="line-wrapper ">
@@ -134,7 +163,7 @@
         
                         </span>
                     </p>
-                    <div class="container element">
+                    <div class="contenu element">
                         <div class="carousel ">
                             <ul>
                             <li><img class="same-size" src="img/salle-de-soin.jpg"></li>
@@ -189,13 +218,13 @@
         </main>
 
         <footer>
-            <nav>
-              <ul>
+
+            <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
+            </ul>
+
             <div class="social-links">
               <a href="#"><i class="fab fa-facebook-square"></i></a>
               <a href="#"><i class="fab fa-twitter-square"></i></a>
@@ -217,5 +246,6 @@
         <!-- SCRIPT -->
         <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
         <script src="js/app.js"></script>
+        <script src="js/app-burger.js"></script>
     </body>
 </html>
