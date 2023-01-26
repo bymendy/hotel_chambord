@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 /* COMMON CLASS */
 .flex {
@@ -14,19 +17,168 @@
 .justify-start {
     justify-content: flex-start;
 }
+.container {
+    position: relative;
+}
+.text-center {
+    text-align: center;
+}
+
+
 
 .border {
     border: solid red 2px;
 }
-
-body {
-    /* height: 100vh; */
-    /* background: tomato !important; */
+.big-title {
+    margin-top: 0;
+    /* margin-bottom: 0.5rem; */
+    font-weight: 500;
+    line-height: 1.2;
+    color: #403833;
+}
+.title {
+    color: #403833;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 20px;
+    font-size: 16px;
+    /* margin-bottom: 20px; */
+}
+.p1 {
+    padding: 1rem;
+}
+.p1 {
+    padding: 2rem;
 }
 
-/* HEADER */
+/* Background */
+.bckg-g {
+    background: #736A63;
+}
+.bckg-b {
+    background: #403833;
+}
+.bckg-w {
+    background: #F4F1EB;
+}
+.bckg-bl {
+    background: #000101;
+}
+  
+/************ HEADER ************/
+/* Nav bar */
+#nav-modif {
+    opacity: 1;
+    background: #403833;
+    color: #F4F1EB;
+}
+  
 
-.img1 {
-    background: url(/img/hall_hotel.jpg) top/cover !important;
-    height: 100vh;
+
+.cover-image {
+    background-image: url(/img/hotel.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titre-1 {
+
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 69px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    word-spacing: 0px;
+}
+.button {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 40px 40px 40px 40px;
+    width: 40vw;
+
+}
+.button-sejours {
+    text-decoration: none;
+    color: #F4F1EB;
+}
+.button-sejours:hover {
+    text-decoration: none;
+    color: #F4F1EB;
+}
+.line {
+    height: 2px !important;
+    width: 70vw;
+    margin: auto ;
+    margin-top: 180px;
+    margin-bottom: 30px;
+    background-color: #000101;
+    /* transition: 1s cubic-bezier(0.77, 0, 0.18, 1); */
+    transform-origin: left;
+    /* transform: scaleX(0); */
+}
+.line-wrapper.line {
+    opacity: 1;
+    /* transform: scaleX(1); */
+}
+
+/* SECTION 1 */
+section.style {
+    font-weight: 400;
+}
+.element {
+    text-align: center;
+    color: #000000;
+    /* width: 100vw; */
+    height: 40px;
+    padding:  2rem ;
+    /* margin: auto; */
+    /* margin-top: 20px; */
+    margin-bottom: 30px;
+}
+.style {
+    margin-top: 10px;
+}
+
+/* MAIN */
+
+.card-sejours {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.card-sejours img {
+    width: 100%;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    border-radius: 5px;
+    overflow: hidden;
+}
+.description {
+    color: #000101;
+    font-size: 14px;
+}
+  /* PART Carrousel */
+
+
+.same-size {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

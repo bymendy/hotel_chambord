@@ -11,50 +11,147 @@
     <body>
         <header>
             <!-- Nav Bar -->
-            <nav class="navbar navbar-expand-lg bg-light">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-modif">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
+                          Dropdown
                         </a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                    </li>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
                     </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Recherche">
+                      <button class="btn btn-outline-success" type="submit">Recherche</button>
+                    </form>
+                  </div>
                 </div>
-                <!-- </div> -->
             </nav>
-            <div class="img1">
+
+
+              
+
+            <div class="cover-image container" >
+                <div class="titre-1">
+                    <h1 class="text-center">L’hôtel Chambord</h1>
+                </div>
+                <div>
+                    <h2 class="text-center p2">Séjours bien-être et détente dans la ville lumiére</h2>
+
+                </div>
+                <div class="button text-center">
+                    <a href="#chambres_et_gammes" role="button">
+                        <span class="button-sejours">
+                            Nos séjours
+                        </span>
+                    </a>
+                </div>
+            </div>            
+        </header>
+
+        <!-- SECTION 1 -->
+        <section class="section-1">
+            <div class="element">
+                <p>
+                    <span class="style">
+                        L’hôtel Chambord est dédié aux  <strong>séjours bien-être</strong> et détente en France
+
+                    </span>
+                </p>
+                <p>
+                    <span class="style">
+                        Trouvez votre séjour idéal qui correspond à vos attentes, à vos destinations de rêve et votre budget, en quelques clics ! 
+                    </span>
+                </p>
+            </div>
+        </section>
+
+        <div class="line-wrapper ">
+            <div class="line"></div>
+        </div>
+
+        <main>
+            <!-- Chambres et gammes -->
+            <div class="bckg-w">
+                <h2 class="big-title text-center p1">Nos séjours</h2>
+            
+                <div class="card-sejours bckg-b">
+                    <img src="img/bedroom2.jpeg" alt="image">
+                    <h2 class="title">Titre de la carte</h2>
+                    <p class="description">Description de la carte</p>
+                    <button>En savoir plus</button>
+                </div>
+                <div class="card-sejours bckg-b">
+                    <img src="img/bedroom3.jpeg" alt="image">
+                    <h2 class="title">Titre de la carte</h2>
+                    <p class="description">Description de la carte</p>
+                    <button>En savoir plus</button>
+                </div>
+                <div class="card-sejours bckg-b">
+                    <img src="img/bedroom4.jpeg" alt="image">
+                    <h2 class="title">Titre de la carte</h2>
+                    <p class="description">Description de la carte</p>
+                    <button>En savoir plus</button>
+                </div>
 
             </div>
 
+            <!-- Spa -->
+            <h2 class="big-title text-center p1">Spa</h2>
+            <p class="text-center element">
+                <span class="style">
+                    Vous êtes un amateur d’hôtel <em>spa</em>  ou vous êtes tentés par une première expérience? 
+                </span>
+            </p>
+           <div class="element"> 
+                <p>
+                    <span class="style">
+                        L’hôtel Chambord vous vous offre un séjour unique et la meilleure expérience. Nous sommes équipés d’une piscine, d’un jacuzzi, d’un hammam, d’un sauna ou d’un hydrojet. 
+    
+                    </span>
+                </p>
+                <div class="carousel ">
+                    <ul>
+                      <li><img class="same-size" src="img/salle-de-soin.jpg"></li>
+                      <li><img class="same-size" src="img/soins.jpeg"></li>
+                      <li><img class="same-size" src="img/soin2webp.webp"></li>
+                    </ul>
+                    <button class="prev">Previous</button>
+                    <button class="next">Next</button>
+                  </div>
+            </div>
 
-        </header>
+              
+
+              
+        </main>
         
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam iusto ipsam tenetur alias veritatis obcaecati! Atque iste adipisci sapiente, voluptate odio minima sit ab hic ipsum beatae aspernatur rem illum quasi voluptates mollitia tenetur ullam recusandae molestiae reprehenderit illo laboriosam? Magnam, quos! Aliquam laborum odio labore consequuntur commodi consequatur esse et eligendi illum nihil sequi quo quasi aspernatur quisquam libero eveniet architecto, suscipit vel deleniti praesentium voluptas magni accusantium cum optio. Asperiores magnam dolor totam. Perferendis dicta error, accusamus nobis, omnis rem natus amet dolore quo quis nulla a incidunt. Rem, vel illo magnam exercitationem placeat odit quas suscipit accusamus adipisci provident nihil esse facere cumque neque! Ullam autem qui reprehenderit nam fugit itaque dolorum quo dolore deleniti minus natus libero, distinctio ad architecto perspiciatis ipsam. Numquam vitae nostrum expedita aperiam saepe dolor molestiae, optio, autem similique veritatis corporis voluptate hic eum atque et sunt aspernatur eaque praesentium tenetur?</p>
 
 
 
 
         <!-- SCRIPT -->
         <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
