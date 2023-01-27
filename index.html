@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/896637ab26.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
     <title>Hotel Chambord</title>
   </head>
@@ -120,13 +122,16 @@
         </div>
       </div>
 
+      <!-- Ligne de séparation -->
+      <div class="line-wrapper">
+        <div class="line-title"></div>
+      </div>      
+
       <!-- Spa -->
-      <section class="contenu element">
+      <!-- SECTION 3 -->
+      <section id="section-3" class="contenu element">
         <div>
-          <h2 class="big-title text-center p1">Spa</h2>
-          <div class="line-wrapper">
-            <div class="line-title"></div>
-          </div>
+          <h2 class="big-title text-center p1">Spa & Bien-être</h2>
           <p class="text-center element">
             <span class="style">
               Vous êtes un amateur d’hôtel <em>spa</em> ou vous êtes tentés par
@@ -186,7 +191,7 @@
                 />
                 <div class="carousel-caption d-none d-md-block">
                   <p>
-                    Some representative placeholder content for the third slide.
+                    Une salle de soin spacieuse dédiée pour votre bien être.
                   </p>
                 </div>
               </div>
@@ -223,25 +228,64 @@
           </div>
         </div>
       </section>
+      <!-- Ligne de séparation -->
+      <div class="line-wrapper">
+        <div class="line-title"></div>
+      </div>     
 
       <!-- Restaurant et cartes -->
-      <div class="flex-wrap element">
-        <div>
-          <h2 class="big-title text-center p1">Restaurant</h2>
-          <img
-            class="same-size"
-            src="img/food1.jpeg"
-            alt="Menu du restaurant"
-          />
-          <p class="text-color2">Contenu de l'actualité</p>
-          <a href="restaurant_et_cartes.html" class="read-more">Voir plus</a>
+      <section>      
+        <h2 class="big-title text-center p1">Restaurant</h2> 
+        <!-- Image à Droite-->                         
+        <div class=" flex flex-wrap element p2">
+          <div class="w-50">
+            <img
+              class="same-size w-100"
+              src="img/food1.jpeg"
+              alt="Menu du restaurant"
+            />
+          </div>
+          <div class="w-50 p1 align-center flex-wrap">
+            <h3>Entrées</h3>
+            <p class="text-color2"> Nous proposons des créatives préparées selon les arrivages et le cycle des saisons.</p>
+            <a href="restaurant_et_cartes.html" class="read-more">Voir plus</a>
+          </div>
         </div>
-      </div>
+        <!-- Image à Gauche -->
+        <div class=" flex flex-wrap element p2">
+          <div class="w-50 p1 align-center flex-wrap">
+            <h3>Plats</h3>
+            <p class="text-color2"> Des plats savoureux à découvrir et à partager.</p>
+            <a href="restaurant_et_cartes.html" class="read-more">Voir plus</a>
+          </div>
+          <div class="w-50">
+            <img
+              class="same-size w-100"
+              src="img/food.jpeg"
+              alt="Menu du restaurant"
+            />
+          </div>
+        </div>
+        <div class=" flex flex-wrap element p2">
+          <div class="w-50">
+            <img
+              class="same-size w-100"
+              src="img/dessert.jpeg"
+              alt="Menu du restaurant"
+            />
+          </div>
+          <div class="w-50 p1 align-center flex-wrap">
+            <h3>Desserts</h3>
+            <p class="text-color2"> Pour instant d'émotion, venez déguster nos desserts.</p>
+            <a href="restaurant_et_cartes.html" class="read-more">Voir plus</a>
+          </div>
+        </div>          
+      </section>
 
-      <!-- Actualités -->
+      <!-- Actualités & Presse -->
 
       <div id="news" class="element">
-        <h2 class="big-title text-center p1">Actualités</h2>
+        <h2 class="big-title text-center p1">Actualités & Presse</h2>
         <img
           class="same-size"
           src="img/hotel-front.jpeg"
@@ -250,9 +294,18 @@
         <p class="text-color2">Contenu de l'actualité</p>
         <a href="#actualites.html" class="read-more">Lire la suite</a>
       </div>
+      
 
       <!-- Newsletter -->
-      <form class="text-center">
+      <div class="flex justify-center">
+      <img style="margin: auto;" class="logo-image" src="img/Hotel_Chambord_Paris (1).png" alt="Logo Hotel Chambord">
+      </div>
+      <h2 class="big-title text-center ">Newsletter </h2>     
+      <!-- Ligne de séparation -->
+      <div class="line-wrapper">
+        <div class="line-title"></div>
+      </div>        
+      <form class="text-center p2">
         <label for="email">Adresse email :</label>
         <input type="email" id="email" name="email" />
         <input type="checkbox" id="subscribe" name="subscribe" />
@@ -261,20 +314,48 @@
       </form>
     </main>
     <!-- FOOTER -->
-    <footer>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    
+    <footer class="flex justify-between p2">
+      <!-- <div class="flex justify-between p2"> -->
+        <div class="link-part p1 w-50">
+          <ul>
+            <li class="footer-link"><a href="#">Accueil</a></li>
+            <li class="footer-link"><a href="#">Nos séjours</a></li>
+            <li class="footer-link"><a href="#">Restaurant</a></li>
+            <li class="footer-link"><a href="#">Spa et bien-être</a></li>
+            <li class="footer-link"><a href="#">Réservation</a></li>  
+          </ul>
+        </div>
 
-      <div class="social-links">
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-twitter-square"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-      <div class="copyright">Copyright Chambord &copy; 2022</div>
+        <div class="link-part p1 w-50 ">
+          <ul>
+            <li class="footer-link"><a href="#">Qui sommes nous?</a></li>
+            <li class="footer-link"><a href="#">Contact</a></li>          
+            <li class="footer-link"><a href="#">Avis & Accés</a></li>
+            <li class="footer-link"><a href="#">Recrutement</a></li>         
+          </ul>
+        </div> 
+
+        <div class=" link-part p1 w-50">
+          <ul class="">
+            <li class="footer-link"><a href="#">Evénements</a></li>
+            <li class="footer-link"><a href="#">Actualités & Presse</a></li>
+            <li><a href="#">Mentions Légales</a></li>
+            <li><a href="#">Conditions Générales de Vente</a></li>           
+          </ul>
+        </div>
+        <!-- Icônes réseaux sociaux -->
+        <div class="social-links flex flex-wrap">
+          <div class="p1 w-50 justify-center">
+            <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+          </div>
+        </div>
+      <!-- </div> -->
     </footer>
+    <p class="copyright"> Copyright Chambord &copy; 2022</p>
+    
 
     <!-- SCRIPT -->
     <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
