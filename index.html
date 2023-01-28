@@ -20,28 +20,32 @@
     <header class="flex align-center justify-between p1">
       <!-- LOGO -->
       <nav class="navbar-brand flex align-center justify-center flex-wrap">
-        <a href="#acceuil">
+        <a href="index.html">
           <img src="img/Hotel_Chambord_Paris (2).png" alt="Logo" />
           <!--Mon site web-->
         </a>
         <!-- NAV -->
         <div class="active">
         <ul class="flex font-text flex-wrap">
-          <li class="p1"><a href="#">Accueil</a></li>
+          <li class="p1"><a href="index.html">Accueil</a></li>
           <li class="p1">
             <a href="#">À propos</a>
             <ul>
-              <li><a href="#">Qui sommes nous?</a></li>
-              <li><a href="#">Nos Avis</a></li>
-              <li><a href="#">Recrutement</a></li>
+              <li><a href="corporate.html">Qui sommes nous?</a></li>
+              <li><a href="avis.html">Nos Avis</a></li>
+              <li><a href="acces.html">Acces</a></li>
+              <li><a href="recrutement.html">Recrutement</a></li>
+              <li><a href="evenements.html">Evenements</a></li>
+              <li><a href="presse.html">Presse</a></li>
             </ul>
           </li>
           <li class="p1">
             <a href="#">Services</a>
             <ul>
-              <li><a href="#">Nos séjours</a></li>
+              <li><a href="chambres_et_gammes.html">Nos séjours</a></li>
               <li><a href="#">Spa et bien-être</a></li>
               <li><a href="restaurant_et_carte.html">Restaurant et cartes</a></li>
+              <li><a href="reservation.html">Reservation</a></li>
             </ul>
           </li>
         </ul>
@@ -52,17 +56,24 @@
         </div>
       </nav>
     </header>
+  
     <!-- SECTION 1 -->
     <!-- Mon Carrousel -->
     <section id="section-1" class="contenu">
-      <div class="carousel">
-        <ul>
-          <li><img class="cover-image" src="img/hotel.jpeg" /></li>
-          <li><img class="cover-image" src="img/hall_hotel.jpg" /></li>
-          <li><img class="cover-image" src="img/hotel-front.jpeg" /></li>
-        </ul>
-        <button class="prev">Previous</button>
-        <button class="next">Next</button>
+      <div class="">
+        <div class=" search-bar carousel">
+          <form class="search p1"><i class="fa fa-search "></i>
+            <input type="text" placeholder="Rechercher..." class="recherche">
+            <button type="submit" class="research "></button>
+          </form>
+          <ul>
+            <li><img class="cover-image" src="img/hotel.jpeg" /></li>
+            <li><img class="cover-image" src="img/front-hotel.jpeg" /></li>
+            <li><img class="cover-image" src="img/hotel-front.jpeg" /></li>
+          </ul>
+          <button class="prev">Previous</button>
+          <button class="next">Next</button>
+        </div>
       </div>
     </section>
 
@@ -92,15 +103,26 @@
         </p>
       </div>
     </section>
-
+    <!-- Barre de réservation -->
+    <div class="reservation-bar ">
+      <form class="formulaire">
+        <label for="date">Date de réservation :</label>
+        <input type="date" id="date" name="date">
+        <label for="time">Heure de réservation :</label>
+        <input type="time" id="time" name="time">
+        <button class="reserver" type="submit">Réserver</button>
+      </form>
+    </div>      
+    <!-- Ligne de separation -->
     <div class="line-wrapper">
       <div class="line"></div>
     </div>
 
     <main>
       <!-- Chambres et gammes -->
-      <div class="bckg-w">
-        <h2 class="big-title text-center p1">Nos séjours</h2>
+      <h2 class="big-title text-center p1">Nos séjours</h2>
+      <div id="chambres" class="bckg-w">
+
 
         <div class="card-sejours bckg-b">
           <img src="img/bedroom6.jfif" alt="image" />
@@ -234,7 +256,7 @@
       </div>     
 
       <!-- Restaurant et cartes -->
-      <section>      
+      <section id="section4">      
         <h2 class="big-title text-center p1">Restaurant</h2> 
         <!-- Image à Droite-->                         
         <div class=" flex flex-wrap element p2">
@@ -247,7 +269,7 @@
           </div>
           <div class="w-50 p1 align-center flex-wrap">
             <h3>Entrées</h3>
-            <p class="text-color2"> Nous proposons des créatives préparées selon les arrivages et le cycle des saisons.</p>
+            <p class="text-color2"> Nous proposons des entrées créatives préparées selon les arrivages et le cycle des saisons.</p>
             <a href="restaurant_et_cartes.html" class="read-more">Voir plus</a>
           </div>
         </div>
@@ -282,20 +304,38 @@
         </div>          
       </section>
 
-      <!-- Actualités & Presse -->
 
-      <div id="news" class="element">
-        <h2 class="big-title text-center p1">Actualités & Presse</h2>
-        <img
-          class="same-size"
-          src="img/hotel-front.jpeg"
-          alt="Image de l'actualité"
-        />
-        <p class="text-color2">Contenu de l'actualité</p>
-        <a href="#actualites.html" class="read-more">Lire la suite</a>
-      </div>
+      <section id="section5" class="flex ">
+
+        <!-- Presse -->
+        <div id="press" class=" bckg-w w-100 flex-wrap element">
+          <h2 class="big-title text-center p1">Presse</h2>
+          <article class="text-center p1">
+            <h2>Titre de l'article</h2>
+            <p>Description de l'article</p>
+            <a href="url de l'article">Lire l'article</a>
+          </article>
+          <article class="text-center p1">
+            <h2>Titre de l'article 2</h2>
+            <p>Description de l'article 2</p>
+            <a href="url de l'article 2">Lire l'article 2</a>
+          </article>
+        </div>
+      <!-- Actualités  -->        
+        <aside id="news" class="element flex-wrap w-100">
+          <h2 class="big-title text-center p1 w-100">Actualités</h2>
+          <img
+            class="same-size w-100"
+            src="img/louvre.jpg"
+            alt="Image de l'actualité"
+          />
+          <div class="w-100 p1 align-center flex-wrap">
+            <p class="text-color2 ">Contenu de l'actualité</p>
+            <a href="#actualites.html" class="read-more">Lire la suite</a>
+          </div>
+        </aside>
+      </section>
       
-
       <!-- Newsletter -->
       <div class="flex justify-center">
       <img style="margin: auto;" class="logo-image" src="img/Hotel_Chambord_Paris (1).png" alt="Logo Hotel Chambord">
@@ -315,9 +355,9 @@
     </main>
     <!-- FOOTER -->
     
-    <footer class="flex justify-between p2">
+    <footer class="flex justify-between p2 font-size-text flex-wrap">
       <!-- <div class="flex justify-between p2"> -->
-        <div class="link-part p1 w-50">
+        <div class="flex link-part p1 w-50">
           <ul>
             <li class="footer-link"><a href="#">Accueil</a></li>
             <li class="footer-link"><a href="#">Nos séjours</a></li>
@@ -327,7 +367,7 @@
           </ul>
         </div>
 
-        <div class="link-part p1 w-50 ">
+        <div class="link-part p1 w-50">
           <ul>
             <li class="footer-link"><a href="#">Qui sommes nous?</a></li>
             <li class="footer-link"><a href="#">Contact</a></li>          
@@ -336,7 +376,7 @@
           </ul>
         </div> 
 
-        <div class=" link-part p1 w-50">
+        <div class="link-part p1 ">
           <ul class="">
             <li class="footer-link"><a href="#">Evénements</a></li>
             <li class="footer-link"><a href="#">Actualités & Presse</a></li>
@@ -345,12 +385,21 @@
           </ul>
         </div>
         <!-- Icônes réseaux sociaux -->
-        <div class="social-links flex flex-wrap">
-          <div class="p1 w-50 justify-center">
+        <div class=" social-links w-100">
+          <div class=" flex p1  justify-center">
             <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
             <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
           </div>
+        </div>
+        <div class="language-selector p1">
+          <form class="selection">
+            <label for="language">Choisir la langue:</label>
+            <select id="language" name="language">
+              <option value="fr">Français</option>
+              <option value="en">Anglais</option>
+            </select>
+          </form>
         </div>
       <!-- </div> -->
     </footer>
