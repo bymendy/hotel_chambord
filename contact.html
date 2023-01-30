@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/896637ab26.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
-    <title>Hotel Chambord</title>
+    <title>Contact</title>
   </head>
   <body>
     <header class="flex align-center justify-between p1">
@@ -50,6 +50,7 @@
               <li><a href="#">Spa et bien-être</a></li>
               <li><a href="restaurant_et_carte.html">Restaurant et cartes</a></li>
               <li><a href="reservation.html">Reservation</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </li>
         </ul>
@@ -60,3 +61,75 @@
         </div>
       </nav>
     </header>
+    <section id="contact">
+  
+        <h1 class="section-header">Contact</h1>
+        
+        <div class="contact-wrapper">
+        
+        <!-- Left contact page --> 
+          
+          <form id="contact-form" class="form-horizontal" role="form">
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NOM" name="name" value="" required>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              </div>
+            </div>
+      
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+            
+            <button class="btn btn-black bg-light send-button" id="submit" type="submit" value="envoyer">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">ENVOYER</span>
+              </div>
+            
+            </button>
+            
+          </form>
+          
+        <!-- Left contact page --> 
+          
+            <div class="direct-contact-container">
+      
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"> Paris, France</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:01-488665" title="Give me a call">(212) 555-2368</a></span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="envoyer un email">paris@hotel_chambord.com</a></span></i></li>
+                
+              </ul>
+      
+              <hr>
+              <ul class="social-media-list">
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>       
+              </ul>
+              <hr>
+      
+              <div class="copyright">&copy;Hôtel Chambord</div>
+      
+            </div>
+          
+        </div>
+        
+      </section>  
+
+
+
+  </body>
+</html>  

@@ -8,9 +8,10 @@
 }
 
 /* GLOBAL CONFIG */
-ul li {
+ul li a {
     list-style: none !important;
     text-decoration: none !important;
+    color: #F4F1EB;
 }
 
 ol,
@@ -137,6 +138,9 @@ ul {
 .margin-bottom {
     margin-bottom: 50px;
 }
+.margin-top {
+    margin-top: 50px;
+}
 /* Background */
 .bckg-g {
     background: #736A63;
@@ -156,6 +160,9 @@ ul {
 
 .bckg-bl {
     background: #040606;
+}
+.bckg-o {
+    background: #E4B344;
 }
 
 .bckg-cover {
@@ -277,7 +284,7 @@ input.recherche[type="text"] {
 }
 
 .w-30 {
-    width: 30%;
+    width: 20%;
 }
 
 button.research[type="submit"] {
@@ -411,7 +418,6 @@ section.style {
     text-align: center;
     color: #000000;
     /* width: 100vw; */
-    padding: 2rem;
 }
 
 .style {
@@ -588,6 +594,12 @@ input[type="submit"] {
     .same-image {
         width: 30%;
     }
+}
+@media (max-width: 600px) {
+    #section5 {
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (min-width: 580px) {

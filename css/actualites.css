@@ -1,0 +1,120 @@
+/* News */
+
+#bloc_news{width:102%;
+    height:auto;
+    margin-left:-1%;
+    background-color:rgba(255, 255, 255, 0.5);}
+    
+    #bloc_news h1{width:95%;
+    background-color:none;
+    margin-top:0;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:3%;
+    padding-bottom:3%;
+    text-align:center;
+    text-transform:uppercase;
+    color:rgba(176, 133, 78, 1);
+    font-size:3vw;
+    font-weight:500;
+    letter-spacing:0.2vw;
+    border-bottom:1px solid rgba(176, 133, 78, 1);}
+    
+    #conteneur_news{width:100%;
+    height:auto;
+    background-color:none;}
+    
+    .emplacement_images_news{position:absolute;
+    width:100%;
+    height:20vw;
+    background-color:none;}
+    
+    .liens_images_news{position:absolute;
+    width:100%;
+    height:20vw;
+    background-color:none;}
+    
+    .liens_images_news:hover{background-color:rgba(36, 43, 50, 0.5);}
+    
+    .images_news{width:100%;
+    height:20vw;}
+    
+    #emplacement_text_news{width:100%;
+    height:auto;
+    background-color:none;
+    margin-top:70%;
+    text-align:center;}
+    
+    .titres_news{width:80%;
+    text-align:center;
+    border-bottom:1px solid rgba(107, 63, 66, 1);
+    padding-bottom:5%;
+    padding-top:5%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0;
+    background-color:none;}
+    
+    .liens_titres_news{text-decoration:none;
+    text-transform:uppercase;
+    color:rgba(176, 133, 78, 1);
+    font-size:1.5vw;
+    font-weight:400;}
+    
+    .liens_titres_news:hover{color:rgba(107, 63, 66, 1);}
+    
+    .body_news{width:100%;
+    height:auto;
+    background-color:none;
+    text-align:justify;
+    color:rgba(41, 31, 20, 1);
+    font-size:1.4vw;
+    font-weight:200;
+    line-height:2.5vw;}
+    
+    .pied_news{background-color:none;
+    color:rgba(176, 133, 78, 1);
+    font-size:1.3vw;
+    font-weight:300;
+    border-top:1px solid rgba(107, 63, 66, 1);
+    padding-top:5%;}
+    
+    #news_une{width:29%;
+    height:auto;
+    background-color:none;
+    position:absolute;
+    margin-left:2%;
+    margin-top:5%;
+    text-align:justify;}
+    
+    #news_deux{width:29%;
+    height:auto;
+    background-color:none;
+    position:absolute;
+    margin-left:34.5%;
+    margin-top:5%;
+    text-align:justify;}
+    
+    #news_trois{width:29.3%;
+    height:auto;
+    background-color:none;
+    position:absolute;
+    margin-left:67%;
+    margin-top:5%;
+    text-align:justify;}
+    
+    #footer_news{width:3vw;
+    margin-left:95%;
+    padding-top:55%;
+    padding-bottom:2%;}
+    
+    /* Séparation News - Vidéos */
+    
+    #separation_news_videos{width:102%;
+    height:40vw;
+    margin-left:-1%;
+    background-color:none;
+    background-image:url(http://cyi-sport.com/wp-content/uploads/2015/12/Candide.jpg);
+    background-attachment:fixed;
+    background-size:100% 100%;
+    background-repeat:no-repeat;}
