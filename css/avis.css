@@ -1,0 +1,25 @@
+/* Nos Avis */
+.image-header {
+    background-image: url(/img/beautiful.webp);
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10%;
+    height: 50%;
+}
+
+.review {
+    width: 30%;
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
