@@ -11,18 +11,26 @@
     line-height: 19px;
     letter-spacing: .05em;
 }
-.cover-image2 {
+.cover-video iframe {
+    position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 100px;
     width: 100vw;
     max-height: 100vh;
 }
+
+
+#part {
+    margin-top: 850px;
+}
+
+
 /* Responsive style */
 
 @media (min-width: 580px) {
 
-    .search-bar {
+    /* .search-bar {
         display: block;
         max-width: 90%;
     }
@@ -33,7 +41,7 @@
 @media (min-width: 780px) {
     div.search-bar {
         max-width:100%;
-    }
+    } */
 }
 
 @media (min-width: 1280px) {

@@ -97,10 +97,15 @@ ul {
 
 .big-title {
     margin-top: 0;
-    /* margin-bottom: 0.5rem; */
     font-weight: 500;
     line-height: 1.2;
     color: #403833;
+}
+.big-title-w {
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #FFFFFF;
 }
 
 .title {
@@ -425,6 +430,9 @@ section.style {
 }
 /************* MAIN *************/
 /*****PART  Chambres et gammes *****/
+main div a {
+    text-decoration: none;
+}
 .card-sejours {
     border-radius: 10px;
     background-color: #FFFFFF;
@@ -462,7 +470,7 @@ section.style {
     background-color: #ffffff;
     color: #E4B344;
     transition: 0.3s;
-    background-color: #040606;
+    background-color: #FFFFFF;
 }
 .description {
     color: #000101;
@@ -482,7 +490,7 @@ section.style {
     background-color: #ffffff;
     color: #E4B344;
     transition: 0.3s;
-    background-color: #040606;
+    background-color: #FFFFFF;
 }
 .same-size {
     width: 300px;
@@ -598,6 +606,9 @@ input[type="submit"] {
 @media (max-width: 600px) {
     #section5 {
         flex-wrap: wrap;
+    }
+    .cover-image{
+        width: 100%;
     }
 
 }

@@ -11,32 +11,42 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://kit.fontawesome.com/896637ab26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/chambres.css">
+    <link rel="stylesheet" href="classique.css">
+    <link rel="stylesheet" href="/css/coporate.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/avis.css" />
+    <link rel="stylesheet" href="css/actualites.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/896637ab26.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
     <title>Hotel Chambord</title>
   </head>
   <body>
     <header class="flex align-center justify-between p1">
-        <!-- LOGO -->
-        <nav class="navbar-brand flex align-center justify-center flex-wrap">
-          <a href="index.html">
-            <img src="img/Hotel_Chambord_Paris (2).png" alt="Logo" />
-            <!--Mon site web-->
-          </a>
-          <!-- NAV -->
-          <div class="active">
-          <ul class="flex font-text flex-wrap">
+      <!-- LOGO -->
+      <nav class="navbar-brand flex align-center justify-center flex-wrap">
+        <a href="index.html">
+          <img src="img/Hotel_Chambord_Paris (2).png" alt="Logo" />
+          <!--Mon site web-->
+        </a>
+        <!-- NAV -->
+        <div class="active">
+          <ul class="flex font-text flex-wrap isActive">
             <li class="p1"><a href="index.html">Accueil</a></li>
             <li class="p1">
               <a href="#">À propos</a>
               <ul>
-                <li><a href="#">Qui sommes nous?</a></li>
-                <li><a href="#">Nos Avis</a></li>
-                <li><a href="#">Acces</a></li>
-                <li><a href="#">Recrutement</a></li>
-                <li><a href="#">Evenements</a></li>
-                <li><a href="#">Presse</a></li>
+                <li><a href="corporate.html">Qui sommes nous?</a></li>
+                <li><a href="avis.html">Nos Avis</a></li>
+                <li><a href="acces.html">Acces</a></li>
+                <li><a href="recrutement.html">Recrutement</a></li>
+                <li><a href="evenements.html">Evenements</a></li>
+                <li><a href="actualites.html">Presse</a></li>
               </ul>
             </li>
             <li class="p1">
@@ -44,81 +54,103 @@
               <ul>
                 <li><a href="chambres_et_gammes.html">Nos séjours</a></li>
                 <li><a href="#">Spa et bien-être</a></li>
-                <li><a href="restaurant_et_carte.html">Restaurant et cartes</a></li>
-                <li><a href="#">Reservation</a></li>
+                <li>
+                  <a href="restaurant_et_carte.html">Restaurant et cartes</a>
+                </li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </li>
           </ul>
-          </div>
-          <!-- BURGER -->
-          <div class="menu-burger flex-end p1">
-            <button class="hamburger">&#9776;</button>
-          </div>
-        </nav>
-      </header>
+        </div>
+        <!-- BURGER -->
+        <div class="menu-burger flex-end p1">
+          <button class="hamburger">&#9776;</button>
+        </div>
+      </nav>
+    </header>
     <main>
-            <!-- SECTION 2 -->
-    <section id="section-2">
+     <!-- SECTION 2 -->
+     <section id="section-chambre">
+      <h2 class="big-title-w text-center p1">Les chambres</h2>      
         <div class="element">
-          <p>
-            <span class="style">
-              L’hôtel Chambord est dédié aux <strong>séjours bien-être</strong> et
-              détente en France
-            </span>
-          </p>
-          <p>
-            <span class="style">
-              Trouvez votre séjour idéal qui correspond à vos attentes, à vos
-              destinations de rêve et votre budget, en quelques clics !
+          <p class="w-50 margin-auto text-color margin-bottom ">
+            <span class="style ">
+              Nos chambres spacieuses et climatisées sont insonorisées et comprennent toutes une salle de bain avec douche et baignoire, un espace cuisine (micro-ondes, machine à café, bouilloire, évier), une TV écran plat, un espace bureau et un balcon ou terrasse dont certains avec vue sur l'extérieur!
             </span>
           </p>
         </div>
       </section>
-      <!-- Barre de réservation -->
-      <div class="reservation-bar ">
-        <form class="formulaire">
-          <label for="date">Date de réservation :</label>
-          <input type="date" id="date" name="date">
-          <label for="time">Heure de réservation :</label>
-          <input type="time" id="time" name="time">
-          <button class="reserver" type="submit">Réserver</button>
-        </form>
-      </div>      
-      <!-- Ligne de separation -->
-      <div class="line-wrapper">
-        <div class="line"></div>
-      </div>
-  
+
         <!-- Chambres et gammes -->
-      <div class="bckg-w">
-        <h2 class="big-title text-center p1">Nos séjours</h2>
+        <section>
 
-        <div class="card-sejours bckg-b">
-          <img src="img/bedroom6.jfif" alt="image" />
-          <h2 class="title">Titre de la carte</h2>
-          <p class="description">Description de la carte</p>
-          <button>En savoir plus</button>
-        </div>
-        <div class="card-sejours bckg-b">
-          <img src="img/bedroom3.jpeg" alt="image" />
-          <h2 class="title">Titre de la carte</h2>
-          <p class="description">Description de la carte</p>
-          <button>En savoir plus</button>
-        </div>
-        <div class="card-sejours bckg-b">
-          <img src="img/bedroom4.jpeg" alt="image" />
-          <h2 class="title">Titre de la carte</h2>
-          <p class="description">Description de la carte</p>
-          <button>En savoir plus</button>
-        </div>
-      </div>
 
-      <!-- Ligne de séparation -->
-      <div class="line-wrapper">
-        <div class="line-title"></div>
-      </div>      
+          <div id="chambres" class="bckg-w">
+            <div class="card-sejours bckg-b">
+              <a href="classique.html">
+                <img src="img/bedroom6.jfif" alt="image"
+              /></a>
+              <h2 class="title">Classique</h2>
+              <p class="description">La chambre classique est décorée dans un style contemporain avec des couleurs vives et rafraîchissantes.</p>
+              <button class="button-c"> <a href="classique.html">En savoir plus</a> </button>
+            </div>
+            <div class="card-sejours bckg-b">
+              <a href="chambres_et_gammes.html">
+                <img src="img/bedroom3.jpeg" alt="image"
+              /></a>
+              <h2 class="title">Confort</h2>
+              <p class="description">La chambre confort est décorée dans un style contemporain, récemment rénovée dans une ambiance très feutrée et harmonieuse.</p>
+              <button class="button-c"><a href="confort.html">En savoir plus</a></button>
+            </div>
+            <div class="card-sejours bckg-b">
+              <a href="chambres_et_gammes.html">
+                <img src="img/bedroom4.jpeg" alt="image"
+              /></a>
+              <h2 class="title">Deluxe</h2>
+              <p class="description">Les chambres Deluxe se trouvent sur la cour intérieure et sur le Boulevard Raspail avec une très belle vue sur le quartier.</p>
+              <button class="button-c"><a href="deluxe.html">En savoir plus</a></button>
+            </div>
+            <div class="card-sejours bckg-b">
+              <a href="chambres_et_gammes.html">
+                <img src="img/suite_room.webp" alt="image"
+              /></a>
+              <h2 class="title">Suite</h2>
+              <p class="description">La suite est décorée dans un style contemporain, récemment rénovée dans une ambiance très feutrée et harmonieuse.</p>
+              <button class="button-c"><a href="suite.html">En savoir plus</a></button>
+            </div>
+            
+          </div>
+          <div id="cover-sejours"></div>
+        </section>
+        <!-- <section class="panel-container">
+          <div class="left">
+            <h2>Classique</h2>
+            
+            <h3>Arrival</h3>
+            <p>Feb 4th, 2019 at 7:30pm</p>
+            
+            <h3>Departure</h3>
+            <p>Feb 6th, 2019 at 10:30am</p>
+            
+            <h3>Room</h3>
+            <p>Business Suite</p>
+            
+            <button><a href="reservation.html" target="_blank">Confirm Reservation</a>
+            </button>
+          </div>
+          <div class="right"></div>
+        </section> -->
+        
+        
+        
+        <div class="floating-text">
+          <a href="reservation.html" target="_blank">Reservation</a>
+        </div>
+
 
     </main>
+    
 
 
 

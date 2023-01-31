@@ -1,0 +1,88 @@
+/* Formulaire de reservation */
+body {
+	background: #ececec;
+	font-family: "Lato";
+	padding: 10px 0;
+	margin: 0;
+	font-size: 14px;
+	overflow-x: hidden;
+	min-width: 345px;
+}
+h1 {
+	position: absolute;
+    top: 10%;
+    text-align: center;
+}
+form {
+	width: 40%;
+	display: block;
+	background: #fff;
+	padding: 25px;
+	margin: 40px auto;
+	box-shadow: 0 4px 10px 4px rgba(255, 255, 255, 0.3);
+	color: #131313;
+}
+fieldset {
+	border: none;
+	margin: 10px auto;
+}
+.double-input  {
+	margin: 30px auto;
+}
+legend {
+    margin: 30px 0 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+.double-input div {
+    float: left;
+    margin-bottom: 10px;
+    width: 48%;
+    margin: 0 1% 10px; 
+
+}
+div label {
+    width: 50%;
+
+}
+.form-input-container label {
+	display: block;
+	margin-bottom: 10px;
+
+}
+.date-select select {
+    width: 47%;
+}
+
+select {
+    width: 100%;
+    color: #a9a9a9;
+    background: transparent;
+    border: 1px solid #E4B344;
+    padding: 8px;
+    height: 35px;
+}
+select:focus {
+    border: 1px solid #a9a9a9;
+}
+input {
+    width: 100%;
+    color: black;
+    padding: 8px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid #a9a9a9;
+}
+button[type="submit"] {
+	height: 50px;
+	width: 300px;
+	background: #E4B344;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 50px;
+	font-family: "Lato";
+	box-shadow: 0px 0px 10px #807777;
+	display: block;
+	margin: 0 auto;
+}
