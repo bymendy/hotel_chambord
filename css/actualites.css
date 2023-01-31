@@ -1,120 +1,370 @@
+/* Image de fond */
+
+body {
+    background-image: url(http://www.process-films.com/wp-content/uploads/2012/12/A074_C020_0519HS.0004964.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* Couleur Placeholder */
+
+input-placeholder {
+    color: rgba(237, 223, 174, 0.5);
+}
+
+/* Conteneur */
+
+#conteneur {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    font-family: "dosis", sans-serif;
+}
+
+
+
+/* Séparation Rs - News */
+
+#separation_rs_news {
+    width: 100%;
+    height: 40vw;
+    background-color: none;
+    background-image: url(/img/actu.webp);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: -1%;
+}
+
 /* News */
 
-#bloc_news{width:102%;
-    height:auto;
-    margin-left:-1%;
-    background-color:rgba(255, 255, 255, 0.5);}
-    
-    #bloc_news h1{width:95%;
-    background-color:none;
-    margin-top:0;
-    margin-left:auto;
-    margin-right:auto;
-    padding-top:3%;
-    padding-bottom:3%;
-    text-align:center;
-    text-transform:uppercase;
-    color:rgba(176, 133, 78, 1);
-    font-size:3vw;
-    font-weight:500;
-    letter-spacing:0.2vw;
-    border-bottom:1px solid rgba(176, 133, 78, 1);}
-    
-    #conteneur_news{width:100%;
-    height:auto;
-    background-color:none;}
-    
-    .emplacement_images_news{position:absolute;
-    width:100%;
-    height:20vw;
-    background-color:none;}
-    
-    .liens_images_news{position:absolute;
-    width:100%;
-    height:20vw;
-    background-color:none;}
-    
-    .liens_images_news:hover{background-color:rgba(36, 43, 50, 0.5);}
-    
-    .images_news{width:100%;
-    height:20vw;}
-    
-    #emplacement_text_news{width:100%;
-    height:auto;
-    background-color:none;
-    margin-top:70%;
-    text-align:center;}
-    
-    .titres_news{width:80%;
-    text-align:center;
-    border-bottom:1px solid rgba(107, 63, 66, 1);
-    padding-bottom:5%;
-    padding-top:5%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:0;
-    background-color:none;}
-    
-    .liens_titres_news{text-decoration:none;
-    text-transform:uppercase;
-    color:rgba(176, 133, 78, 1);
-    font-size:1.5vw;
-    font-weight:400;}
-    
-    .liens_titres_news:hover{color:rgba(107, 63, 66, 1);}
-    
-    .body_news{width:100%;
-    height:auto;
-    background-color:none;
-    text-align:justify;
-    color:rgba(41, 31, 20, 1);
-    font-size:1.4vw;
-    font-weight:200;
-    line-height:2.5vw;}
-    
-    .pied_news{background-color:none;
-    color:rgba(176, 133, 78, 1);
-    font-size:1.3vw;
-    font-weight:300;
-    border-top:1px solid rgba(107, 63, 66, 1);
-    padding-top:5%;}
-    
-    #news_une{width:29%;
-    height:auto;
-    background-color:none;
-    position:absolute;
-    margin-left:2%;
-    margin-top:5%;
-    text-align:justify;}
-    
-    #news_deux{width:29%;
-    height:auto;
-    background-color:none;
-    position:absolute;
-    margin-left:34.5%;
-    margin-top:5%;
-    text-align:justify;}
-    
-    #news_trois{width:29.3%;
-    height:auto;
-    background-color:none;
-    position:absolute;
-    margin-left:67%;
-    margin-top:5%;
-    text-align:justify;}
-    
-    #footer_news{width:3vw;
-    margin-left:95%;
-    padding-top:55%;
-    padding-bottom:2%;}
-    
-    /* Séparation News - Vidéos */
-    
-    #separation_news_videos{width:102%;
-    height:40vw;
-    margin-left:-1%;
-    background-color:none;
-    background-image:url(http://cyi-sport.com/wp-content/uploads/2015/12/Candide.jpg);
-    background-attachment:fixed;
-    background-size:100% 100%;
-    background-repeat:no-repeat;}
+#bloc_news {
+    width: 100%;
+    height: auto;
+    margin-left: -1%;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#bloc_news h1 {
+    width: 95%;
+    background-color: none;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(176, 133, 78, 1);
+    font-size: 3vw;
+    font-weight: 500;
+    letter-spacing: 0.2vw;
+    border-bottom: 1px solid rgba(176, 133, 78, 1);
+}
+
+#conteneur_news {
+    width: 100%;
+    height: auto;
+    background-color: none;
+}
+
+.emplacement_images_news {
+    position: absolute;
+    width: 100%;
+    height: 20vw;
+    background-color: none;
+}
+
+.liens_images_news {
+    position: absolute;
+    width: 100%;
+    height: 20vw;
+    background-color: none;
+}
+
+.liens_images_news:hover {
+    background-color: rgba(36, 43, 50, 0.5);
+}
+
+.images_news {
+    width: 100%;
+    height: 20vw;
+}
+
+#emplacement_text_news {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    margin-top: 70%;
+    text-align: center;
+}
+
+.titres_news {
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid rgba(107, 63, 66, 1);
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    background-color: none;
+}
+
+.liens_titres_news {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(176, 133, 78, 1);
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.liens_titres_news:hover {
+    color: rgba(107, 63, 66, 1);
+}
+
+.body_news {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    text-align: justify;
+    color: rgba(41, 31, 20, 1);
+    font-size: 1.4vw;
+    font-weight: 200;
+    line-height: 2.5vw;
+}
+
+
+#news_une {
+    width: 29%;
+    height: auto;
+    background-color: none;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 5%;
+    text-align: justify;
+}
+
+#news_deux {
+    width: 29%;
+    height: auto;
+    background-color: none;
+    position: absolute;
+    margin-left: 34.5%;
+    margin-top: 5%;
+    text-align: justify;
+}
+
+#news_trois {
+    width: 29.3%;
+    height: auto;
+    background-color: none;
+    position: absolute;
+    margin-left: 67%;
+    margin-top: 5%;
+    text-align: justify;
+}
+
+#separateur {
+
+    padding-top: 80px;
+    padding-bottom: 2%;
+}
+
+/* Séparation News - Vidéos */
+
+#separation_news_videos {
+    width: 102%;
+    height: 40vw;
+    margin-left: -1%;
+    background-color: none;
+    background-image: url(http://cyi-sport.com/wp-content/uploads/2015/12/Candide.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* Vidéos */
+
+#bloc_videos {
+    width: 100%;
+    height: auto;
+    margin-left: -1%;
+    background-color: rgba(157, 156, 156, 0.2);
+}
+
+#bloc_videos h1 {
+    width: 95%;
+    background-color: none;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(38, 38, 38);
+    font-size: 3vw;
+    font-weight: 500;
+    letter-spacing: 0.2vw;
+    border-bottom: 1px solid rgb(10, 10, 10);
+}
+
+#conteneur_videos {
+    width: 95%;
+    height: auto;
+    background-color: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.videos {
+    background-color: none;
+    width: 100%;
+    height: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textes_video {
+    text-align: center;
+    color: rgba(41, 31, 20, 1);
+    font-size: 1.3vw;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 3vw;
+}
+
+.titres_videos {
+    color: rgba(41, 31, 20, 1);
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: normal;
+    border-bottom: 1px solid #E4B344;
+    padding-bottom: 5%;
+}
+
+#video_1 {
+    position: absolute;
+    background-color: none;
+    width: 42%;
+    height: auto;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+#video_2 {
+    position: absolute;
+    background-color: none;
+    width: 42%;
+    height: auto;
+    margin-top: 3%;
+    margin-left: 48%;
+}
+
+#video_3 {
+    position: absolute;
+    background-color: none;
+    width: 42%;
+    height: auto;
+    margin-top: 38%;
+    margin-left: 3%;
+}
+
+#few_words {
+    position: absolute;
+    background-color: none;
+    width: 42%;
+    height: auto;
+    margin-top: 38%;
+    margin-left: 48%;
+}
+
+#phrase_videos {
+    padding-top: 80%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: rgba(122, 64, 66, 1);
+    font-size: 1.3vw;
+    font-weight: 200;
+    font-style: italic;
+}
+
+
+/* Séparation Vidéos - About */
+#separation_videos_about {
+    width: 102%;
+    height: 40vw;
+    margin-left: -1%;
+    background-color: none;
+    background-image: url(/img/eiffel-tower.webp);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* About */
+#bloc_about {
+    width: 102%;
+    height: auto;
+    margin-left: -1%;
+    background-color: rgba(84, 6, 3, 0.5);
+    text-align: center;
+}
+
+#bloc_about h1 {
+    width: 95%;
+    background-color: none;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(58, 4, 2, 1);
+    font-size: 3vw;
+    font-weight: 500;
+    letter-spacing: 0.2vw;
+    border-bottom: 1px solid rgba(58, 4, 2, 1);
+}
+
+#about_image {
+
+    margin: auto;
+    /* height: auto; */
+    background-color: none;
+}
+
+.image_logo {
+    width: 200px;
+    height: 200px;
+    max-width: 30%;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 12px 5px rgba(241, 230, 21, 0.667);
+}
+
+#bloc_about p {
+    color: rgba(166, 133, 93, 1);
+    font-size: 1.5vw;
+    font-weight: 300;
+    line-height: 3vw;
+    letter-spacing: 0.2vw;
+    margin: 5% 15% auto 15%;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 1);
+}
+@media (max-width: 600px) {
+    #conteneur_news div {
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    div.image_logo {
+        max-width: 30%;
+    }
+}
