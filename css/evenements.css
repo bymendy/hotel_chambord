@@ -1,33 +1,120 @@
 /* Titre Evenements */
-section {
-	text-align:center;
-	display:flex;
-	align-items:center;
-	padding: 100px 80px;
+/* Vidéos */
+
+#bloc_videos {
+    width: 100%;
+    height: auto;
+    margin-left: -1%;
+    background-color: rgba(157, 156, 156, 0.2);
 }
-/* Bonton de contact */
-.btn {
-	border-radius:4px;
-	text-transform:uppercase;
-	background-color:#3751b5;
-	opacity:1;
-	font-weight:bold;
-	color:#fff;
+
+#bloc_videos h1 {
+    width: 95%;
+    background-color: none;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(38, 38, 38);
+    font-size: 3vw;
+    font-weight: 500;
+    letter-spacing: 0.2vw;
+    border-bottom: 1px solid rgb(10, 10, 10);
 }
-.evenement {
-	position:relative;
-	justify-content:center;
-	text-align:center;
-	min-height:100vh;
-	color:#fff;
+
+#conteneur_videos {
+    width: 95%;
+    height: auto;
+    background-color: none;
+    margin-left: auto;
+    margin-right: auto;
 }
-.evenement .bkg-img {
-	position:absolute;
-	top:0;
-	left:0;
-    background-image: url();
-	background-size:cover;
-	width:100%;
-	height:100%;
-	z-index:-1;
+
+.videos {
+    background-color: none;
+    width: 100%;
+    height: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textes_video {
+    text-align: center;
+    color: rgba(41, 31, 20, 1);
+    font-size: 1.3vw;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 3vw;
+}
+
+.titres_videos {
+    color: rgba(41, 31, 20, 1);
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: normal;
+    border-bottom: 1px solid #E4B344;
+    padding-bottom: 5%;
+}
+
+#video_1 {
+    position: absolute;
+    background-color: none;
+    width: 42%;
+    height: auto;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+#video_2 {
+    position: absolute;
+    background-color: none;
+    width: 42%;
+    height: auto;
+    margin-top: 3%;
+    margin-left: 48%;
+}
+
+#video_3 {
+    position: absolute;
+    background-color: none;
+    width: 42%;
+    height: auto;
+    margin-top: 38%;
+    margin-left: 3%;
+}
+
+#few_words {
+    position: absolute;
+    background-color: none;
+    width: 42%;
+    height: auto;
+    margin-top: 38%;
+    margin-left: 48%;
+}
+
+#phrase_videos {
+    padding-top: 80%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: rgba(122, 64, 66, 1);
+    font-size: 1.3vw;
+    font-weight: 200;
+    font-style: italic;
+}
+
+
+/* Séparation Vidéos - About */
+#separation_videos_about {
+    width: 102%;
+    height: 40vw;
+    margin-left: -1%;
+    background-color: none;
+    background-image: url(/img/eiffel-tower.webp);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }

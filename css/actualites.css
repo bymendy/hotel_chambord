@@ -1,18 +1,3 @@
-/* Image de fond */
-
-body {
-    background-image: url(http://www.process-films.com/wp-content/uploads/2012/12/A074_C020_0519HS.0004964.jpg);
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-/* Couleur Placeholder */
-
-input-placeholder {
-    color: rgba(237, 223, 174, 0.5);
-}
-
 /* Conteneur */
 
 #conteneur {
@@ -30,14 +15,12 @@ input-placeholder {
     background-attachment: fixed;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-left: -1%;
 }
 
 /* News */
 #bloc_news {
     width: 100%;
     height: auto;
-    margin-left: -1%;
     margin-top: 50px;
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -161,49 +144,18 @@ input-placeholder {
 }
 
 #separateur {
-
     padding-top: 80px;
     padding-bottom: 2%;
 }
 
-/* Séparation News - Vidéos */
-
+/* Séparation Evenements - Vidéos */
 #separation_news_videos {
     width: 102%;
     height: 40vw;
-    margin-left: -1%;
-    background-color: none;
-    background-image: url(http://cyi-sport.com/wp-content/uploads/2015/12/Candide.jpg);
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 
 /* Vidéos */
 
-#bloc_videos {
-    width: 100%;
-    height: auto;
-    margin-left: -1%;
-    background-color: rgba(157, 156, 156, 0.2);
-}
-
-#bloc_videos h1 {
-    width: 95%;
-    background-color: none;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(38, 38, 38);
-    font-size: 3vw;
-    font-weight: 500;
-    letter-spacing: 0.2vw;
-    border-bottom: 1px solid rgb(10, 10, 10);
-}
 
 #conteneur_videos {
     width: 95%;
@@ -220,16 +172,6 @@ input-placeholder {
     margin-left: auto;
     margin-right: auto;
 }
-
-.textes_video {
-    text-align: center;
-    color: rgba(41, 31, 20, 1);
-    font-size: 1.3vw;
-    font-weight: 200;
-    font-style: italic;
-    line-height: 3vw;
-}
-
 .titres_videos {
     color: rgba(41, 31, 20, 1);
     text-transform: uppercase;
@@ -248,45 +190,6 @@ input-placeholder {
     margin-top: 3%;
     margin-left: 3%;
 }
-
-#video_2 {
-    position: absolute;
-    background-color: none;
-    width: 42%;
-    height: auto;
-    margin-top: 3%;
-    margin-left: 48%;
-}
-
-#video_3 {
-    position: absolute;
-    background-color: none;
-    width: 42%;
-    height: auto;
-    margin-top: 38%;
-    margin-left: 3%;
-}
-
-#few_words {
-    position: absolute;
-    background-color: none;
-    width: 42%;
-    height: auto;
-    margin-top: 38%;
-    margin-left: 48%;
-}
-
-#phrase_videos {
-    padding-top: 80%;
-    padding-bottom: 2%;
-    text-align: center;
-    color: rgba(122, 64, 66, 1);
-    font-size: 1.3vw;
-    font-weight: 200;
-    font-style: italic;
-}
-
-
 /* Séparation Vidéos - About */
 #separation_videos_about {
     width: 102%;
@@ -318,20 +221,13 @@ input-placeholder {
     padding-bottom: 3%;
     text-align: center;
     text-transform: uppercase;
-    color: rgba(58, 4, 2, 1);
-    font-size: 3vw;
-    font-weight: 500;
-    letter-spacing: 0.2vw;
-    border-bottom: 1px solid rgba(58, 4, 2, 1);
 }
-
 #about_image {
 
     margin: auto;
     /* height: auto; */
     background-color: none;
 }
-
 .image_logo {
     width: 200px;
     height: 200px;
@@ -350,6 +246,7 @@ input-placeholder {
     margin: 5% 15% auto 15%;
     text-shadow: 2px 2px 12px rgba(0, 0, 0, 1);
 }
+/* Responsive style */
 @media (max-width: 600px) {
     #conteneur_news div {
         display: block;
