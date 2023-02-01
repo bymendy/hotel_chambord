@@ -1,0 +1,33 @@
+/* Titre Evenements */
+section {
+	text-align:center;
+	display:flex;
+	align-items:center;
+	padding: 100px 80px;
+}
+/* Bonton de contact */
+.btn {
+	border-radius:4px;
+	text-transform:uppercase;
+	background-color:#3751b5;
+	opacity:1;
+	font-weight:bold;
+	color:#fff;
+}
+.evenement {
+	position:relative;
+	justify-content:center;
+	text-align:center;
+	min-height:100vh;
+	color:#fff;
+}
+.evenement .bkg-img {
+	position:absolute;
+	top:0;
+	left:0;
+    background-image: url(/img/guest-reception.jpeg);
+	background-size:cover;
+	width:100%;
+	height:100%;
+	z-index:-1;
+}

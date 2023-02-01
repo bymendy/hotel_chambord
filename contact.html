@@ -11,12 +11,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="/css/coporate.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/avis.css">
-    <link rel="stylesheet" href="css/actualites.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <script src="https://kit.fontawesome.com/896637ab26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/coporate.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/avis.css" />
+    <link rel="stylesheet" href="css/actualites.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/896637ab26.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
     <title>Contact</title>
@@ -31,30 +34,32 @@
         </a>
         <!-- NAV -->
         <div class="active">
-        <ul class="flex font-text flex-wrap">
-          <li class="p1"><a href="index.html">Accueil</a></li>
-          <li class="p1">
-            <a href="#">À propos</a>
-            <ul>
-              <li><a href="corporate.html">Qui sommes nous?</a></li>
-              <li><a href="avis.html">Nos Avis</a></li>
-              <li><a href="acces.html">Acces</a></li>
-              <li><a href="recrutement.html">Recrutement</a></li>
-              <li><a href="evenements.html">Evenements</a></li>
-              <li><a href="presse.html">Presse</a></li>
-            </ul>
-          </li>
-          <li class="p1">
-            <a href="#">Services</a>
-            <ul>
-              <li><a href="chambres_et_gammes.html">Nos séjours</a></li>
-              <li><a href="#">Spa et bien-être</a></li>
-              <li><a href="restaurant_et_carte.html">Restaurant et cartes</a></li>
-              <li><a href="reservation.html">Reservation</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </li>
-        </ul>
+          <ul class="flex font-text flex-wrap isActive">
+            <li class="p1"><a href="index.html">Accueil</a></li>
+            <li class="p1">
+              <a href="#">À propos</a>
+              <ul>
+                <li><a href="corporate.html">Qui sommes nous?</a></li>
+                <li><a href="avis.html">Nos Avis</a></li>
+                <li><a href="acces.html">Acces</a></li>
+                <li><a href="recrutement.html">Recrutement</a></li>
+                <li><a href="evenements.html">Evenements</a></li>
+                <li><a href="actualites.html">Presse</a></li>
+              </ul>
+            </li>
+            <li class="p1">
+              <a href="#">Services</a>
+              <ul>
+                <li><a href="chambres_et_gammes.html">Nos séjours</a></li>
+                <li><a href="#">Spa et bien-être</a></li>
+                <li>
+                  <a href="restaurant_et_carte.html">Restaurant et cartes</a>
+                </li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
         <!-- BURGER -->
         <div class="menu-burger flex-end p1">
@@ -63,74 +68,175 @@
       </nav>
     </header>
     <section id="contact">
-  
-        <h1 class="section-header">Contact</h1>
-        
-        <div class="contact-wrapper">
-        
-        <!-- Left contact page --> 
-          
-          <form id="contact-form" class="form-horizontal" role="form">
-             
-            <div class="form-group">
-              <div class="col-sm-12">
-                <input type="text" class="form-control" id="name" placeholder="NOM" name="name" value="" required>
-              </div>
+      <h1 class="section-header">Contact</h1>
+
+      <div class="contact-wrapper">
+        <!-- Left contact page -->
+
+        <form id="contact-form" class="form-horizontal" role="form">
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="NOM"
+                name="name"
+                value=""
+                required
+              />
             </div>
-      
-            <div class="form-group">
-              <div class="col-sm-12">
-                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-              </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="EMAIL"
+                name="email"
+                value=""
+                required
+              />
             </div>
-      
-            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-            
-            <button class="btn btn-black bg-light send-button" id="submit" type="submit" value="envoyer">
-              <div class="alt-send-button">
-                <i class="fa fa-paper-plane"></i><span class="send-text">ENVOYER</span>
-              </div>
-            
-            </button>
-            
-          </form>
-          
-        <!-- Left contact page --> 
-          
-            <div class="direct-contact-container">
-      
-              <ul class="contact-list">
-                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"> Paris, France</span></i></li>
-                
-                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:01-488665" title="Give me a call">(212) 555-2368</a></span></i></li>
-                
-                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="envoyer un email">paris@hotel_chambord.com</a></span></i></li>
-                
-              </ul>
-      
-              <hr>
-              <ul class="social-media-list">
-                <li><a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-facebook" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>       
-              </ul>
-              <hr>
-      
-              <div class="copyright">&copy;Hôtel Chambord</div>
-      
+          </div>
+
+          <textarea
+            class="form-control"
+            rows="10"
+            placeholder="MESSAGE"
+            name="message"
+            required
+          ></textarea>
+
+          <button
+            class="btn btn-black bg-light send-button"
+            id="submit"
+            type="submit"
+            value="envoyer"
+          >
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i
+              ><span class="send-text">ENVOYER</span>
             </div>
-          
+          </button>
+        </form>
+
+        <!-- Left contact page -->
+
+        <div class="direct-contact-container">
+          <ul class="contact-list">
+            <li class="list-item">
+              <i class="fa fa-map-marker fa-2x"
+                ><span class="contact-text place"> Paris, France</span></i
+              >
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-phone fa-2x"
+                ><span class="contact-text phone"
+                  ><a href="tel:01-488665" title="Give me a call"
+                    >(212) 555-2368</a
+                  ></span
+                ></i
+              >
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-envelope fa-2x"
+                ><span class="contact-text gmail"
+                  ><a href="mailto:#" title="envoyer un email"
+                    >paris@hotel_chambord.com</a
+                  ></span
+                ></i
+              >
+            </li>
+          </ul>
+
+          <hr />
+          <ul class="social-media-list">
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-facebook" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+          <hr />
+
+          <div class="copyright">&copy;Hôtel Chambord</div>
         </div>
+      </div>
+    </section>
+    <div id="img_city"></div>     
+        <!-- FOOTER -->
+        <footer
+        id="footer-section"
+        class="flex justify-around p1 font-size-text flex-wrap"
+      >
+        <!-- <div class="flex justify-between p2"> -->
+        <div class="link-part p1 w-30 text-color">
+          <ul>
+            <li class="footer-link"><a href="#">Accueil</a></li>
+            <li class="footer-link"><a href="#">Nos séjours</a></li>
+            <li class="footer-link"><a href="#">Restaurant</a></li>
+            <li class="footer-link"><a href="#">Spa et bien-être</a></li>
+            <li class="footer-link"><a href="#">Réservation</a></li>
+          </ul>
+        </div>
+  
+        <div class="link-part p1 w-30">
+          <ul>
+            <li class="footer-link"><a href="#">Qui sommes nous?</a></li>
+            <li class="footer-link"><a href="contact.html">Contact</a></li>
+            <li class="footer-link"><a href="#">Avis & Accés</a></li>
+            <li class="footer-link"><a href="#">Recrutement</a></li>
+          </ul>
+        </div>
+  
+        <div class="link-part p1 w-30">
+          <ul class="">
+            <li class="footer-link"><a href="#">Evénements</a></li>
+            <li class="footer-link"><a href="#">Actualités & Presse</a></li>
+            <li><a href="#">Mentions Légales</a></li>
+            <li><a href="#">CGV</a></li>
+          </ul>
+        </div>
+          <!-- Icônes réseaux sociaux -->
+          <div class=" social-links w-100">
+            <div class=" flex p1  justify-center">
+              <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <p class="w-100 text-center">Paiement sécurisé
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-paypal"></i>
+            </p>
+          </div>
+  
+        <div class="language-selector p1">
+          <form class="selection">
+            <label for="language">Choisir la langue:</label>
+            <select id="language" name="language">
+              <option value="fr">Français</option>
+              <option value="en">Anglais</option>
+            </select>
+          </form>
         
-      </section>  
-
-
-
+        </div>
+     
+        <!-- </div> -->
+      </footer>
   </body>
-</html>  
+</html>

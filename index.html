@@ -71,21 +71,14 @@
     <!-- SECTION 1 -->
     <!-- Mon Carrousel -->
     <section id="section-1" class="contenu">
-      <div class="">
-        <div class="search-bar carousel">
-          <form class="search p1">
-            <i class="fa fa-search"></i>
-            <input type="text" placeholder="Rechercher..." class="recherche" />
-            <button type="submit" class="research"></button>
-          </form>
-          <ul>
-            <li><img class="cover-image" src="img/hotel.jpeg" /></li>
-            <li><img class="cover-image" src="img/front-hotel.jpeg" /></li>
-            <li><img class="cover-image" src="img/hotel-front.jpeg" /></li>
-          </ul>
-          <button class="prev">Previous</button>
-          <button class="next">Next</button>
-        </div>
+      <div class="carousel">
+        <ul>
+          <li><img class="cover-image" src="img/hotel.jpeg" /></li>
+          <li><img class="cover-image" src="img/front-hotel.jpeg" /></li>
+          <li><img class="cover-image" src="img/hotel-front.jpeg" /></li>
+        </ul>
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
       </div>
     </section>
 
@@ -93,7 +86,7 @@
       <h1 class="text-center text-color2">L’hôtel Chambord</h1>
     </div>
     <div>
-      <h2 class="text-center p2 text-color2">
+      <h2 id="titre-hotel" class="text-center p2 text-color2">
         Séjours bien-être et détente dans la ville lumiére
       </h2>
     </div>
@@ -129,19 +122,29 @@
       <!-- Chambres et gammes -->
       <div class="element">
       <h2 class="big-title text-center p1">Nos séjours
-      <p class="  margin-auto text-center"></h2>
+      <p class="  elemnt margin-auto text-center"></h2>
         <span class="style">
           Trouvez votre séjour idéal qui correspond à vos attentes, à vos
           destinations de rêve et votre budget, en quelques clics !
         </span>
       </p>
       </div>
+      <div class="p1 rating w-100 ">
+        <div class="stars text-center">
+          <i class="fa fa-star gold"></i>
+          <i class="fa fa-star gold"></i>
+          <i class="fa fa-star gold"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="p1 font-size-text text-center"><a href="avis.html">Voir les avis</a></div>
+      </div>
       <div class="text-center p2">
         <a href="chambres_et_gammes.html" role="button">
           <span class="button-c"> Je réserve mon séjour </span>
         </a>
       </div>
-      <div id="chambres" class="bckg-w">
+      <div id="chambres" class=" p1 bckg-w">
         <div class="card-sejours bckg-b">
           <a href="chambres_et_gammes.html">
             <img src="img/bedroom6.jfif" alt="image"
@@ -377,8 +380,8 @@
         <input type="submit" value="S'inscrire" />
       </form>
     </main>
+    <div id="img_2separation"></div>
     <!-- FOOTER -->
-
     <footer
       id="footer-section"
       class="flex justify-around p1 font-size-text flex-wrap"

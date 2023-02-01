@@ -13,6 +13,9 @@ ul li a {
     text-decoration: none !important;
     color: #F4F1EB;
 }
+div a {
+    text-decoration: none;
+}
 
 ol,
 ul {
@@ -94,6 +97,10 @@ ul {
     font-size: 17px;
     color: #040606;
 }
+.font-s {
+    font-size: 30px;
+    color: #FFFFFF;
+}
 
 .big-title {
     margin-top: 0;
@@ -152,11 +159,11 @@ ul {
 }
 
 .bckg-c {
-    background: #F4F4F4;
+    background: #ffffff;
 }
 
 .bckg-b {
-    background: #403833;
+    background: #f8f8f8;
 }
 
 .bckg-w {
@@ -241,63 +248,7 @@ nav li ul {
 nav li:hover ul {
     display: block;
 }
-/* Barre derecherche  */
-.search-bar {
-    display: flex;
-    align-items: center;
-    position: relative;
-    border-radius: 25px;
-    background-color: #f2f2f2;
 
-}
-form.search {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 1rem 0;
-    margin-top: 50px;
-    margin-bottom: auto;
-    width: 80vw;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-}
-input.recherche[type="text"] {
-    flex: 1;
-    padding: 12px 20px;
-    /* margin: auto; */
-    border: none;
-    width: 70vw;
-    font-size: 16px;
-    outline: none;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    opacity: 0.8;
-}
-.search-icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-}
-.fa-search {
-    font-size: 20px;
-    color: gray;
-    margin-left: 10px;
-}
-
-.w-30 {
-    width: 20%;
-}
-
-button.research[type="submit"] {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
 /* Carrousel */
 .carousel {
     margin: auto;
@@ -313,7 +264,7 @@ button.research[type="submit"] {
     background-repeat: no-repeat;
     margin-top: 100px;
     width: 100vw;
-    max-height: 90vh;
+    max-height: 50vh;
 }
 /* Barre de réservation */
 .reservation-bar {
@@ -379,7 +330,6 @@ button.reserver[type="submit"] {
 
 /* SECTION 1 */
 .titre-1 {
-
     margin-bottom: 20px;
 }
 h1 {
@@ -405,10 +355,9 @@ h2 {
     width: 40vw;
 
 }
-.button-sejours {
-    text-decoration: none;
+/* .button-sejours {
     color: #F4F1EB;
-}
+} */
 
 .button-sejours:hover {
     text-decoration: none;
@@ -459,12 +408,12 @@ main div a {
 }
 .button-c {
     text-decoration: none;
-    color: #E4B344;
+    color: #F4F1EB;
     padding: 1rem;
     border: 1px solid;
     border-radius: 50px;
     text-decoration: none;
-    background-color: #F4F1EB;
+    background-color: #E4B344;
 }
 .button-c:hover {
     background-color: #ffffff;
@@ -479,12 +428,12 @@ main div a {
 /**** PART  Spa ****/
 .button-spa {
     text-decoration: none;
-    color: #E4B344;
+    color: #FFFFFF;
     padding: 1rem;
     border: 1px solid;
     border-radius: 50px;
     text-decoration: none;
-    background-color: #F4F1EB;
+    background-color: #E4B344;
 }
 .button-spa:hover {
     background-color: #ffffff;
@@ -561,6 +510,22 @@ input[type="submit"] {
     color: #403833;
 }
 
+/* Image de separation */
+#img_2separation {
+    width: 100%;
+    height: 40vw;
+    background-color: none;
+    background-image: url(/img/city.jpeg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: -1%;
+    filter: grayscale(100%);
+}
+#img_2separation:hover {
+    filter: grayscale(10%);
+}
+
 
 /******** Responsive Styles ********/
 /* Nav Burger */
@@ -590,29 +555,6 @@ input[type="submit"] {
         display: block;
     }
 } */
-
-
-@media (max-width: 768px) {
-
-    #press,
-    #news {
-        width: 100%;
-    }
-
-    .same-image {
-        width: 30%;
-    }
-}
-@media (max-width: 600px) {
-    #section5 {
-        flex-wrap: wrap;
-    }
-    .cover-image{
-        width: 100%;
-    }
-
-}
-
 @media (min-width: 580px) {
     div.reservation-bar {
         width:50%;
@@ -644,6 +586,74 @@ input[type="submit"] {
     } */
     #section5 aside img {
         max-width: 80%;
-        height: 50%;
+        height: 60%;
     }
 }
+@media (max-width: 600px) {
+    #section5 {
+        flex-wrap: wrap;
+    }
+    .cover-image{
+        width: 100%;
+    }
+    #carouselExampleCaptions{
+        width: 100%;
+    }            
+}
+@media (min-width: 600px) {
+
+    #carouselExampleCaptions{
+        width: 80%;
+    }
+    #section-4 img {
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #press,
+    #news {
+        width: 100%;
+    }
+
+    .same-image {
+        width: 30%;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .cover-image{
+        position: absolute;
+        background-size: cover;
+        width: 100%;
+    }
+    #titre-hotel{
+        margin-top: 800px;
+        padding: 1rem;
+    }
+
+    #section-2 {
+        margin-top: 5px;
+    }
+}
+@media (min-width: 1250px) {
+    .cover-image{
+        position: absolute;
+        background-size: cover;
+        width: 100%;
+        max-height: 60vh;
+    }
+    #titre-hotel{
+        margin-top: 850px;
+        padding: 1rem;
+    }
+
+    #section-2 {
+        margin-top: 5px;
+    }
+}
+
+

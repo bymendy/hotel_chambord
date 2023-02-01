@@ -1,0 +1,175 @@
+/* FORMULAIRE */
+#formulaire-avis {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    height: 40vw;
+    background-color: none;
+    background-image: url(/img/beautiful.webp);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+}
+
+#formulaire-avis:hover {
+    filter: grayscale(10%);
+}
+.form_avis {
+    margin: 10px 0px;
+}
+
+.kinput {
+    position: relative;
+}
+
+/* Part email */
+.kinput input {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #E4B344;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.kinput input:required {
+    /* Remove the red border */
+    box-shadow: none;
+}
+.kinput label {
+    /* The placeholder label */
+    padding: 0px 5px;
+    background-color: white;
+    color: #666;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    transform-origin: bottom left;
+    transition: 150ms ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label {
+    transform: scale(0.75) translateY(-34px);
+}
+
+.kinput input::placeholder {
+    color: #fff;
+}
+.kinput input:focus::placeholder,
+.kinput input:valid::placeholder {
+    color: #666;
+}
+/*-----------------*/
+/* Réglages 'selection' 'commentaires' 'date' */
+.kselect,
+.ktextarea,
+.kdate {
+    position: relative;
+    background-color: #fff;
+    border: #E4B344 1px solid;
+    width: 300px;
+}
+/* Selection Choix services */
+.kselect label {
+    left: -10px;
+    padding: 0px 5px;
+    background-color: white;
+    color: #666;
+    position: absolute;
+    transform: scale(0.75) translateY(-15px);
+}
+.kselect select {
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 300px;
+
+    height: auto;
+    border: 0;
+    margin: 0;
+    padding: 0.75em;
+    border-radius: 0;
+
+    text-overflow: ellipsis;
+}
+.kselect::after {
+    /* Le pointeur du select */
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    right: 0.75em;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-top-color: #E4B344;
+    border-width: 6px;
+    border-style: solid;
+    pointer-events: none;
+}
+/* Part Commentaires */
+.ktextarea label {
+    left: -10px;
+    padding: 0px 5px;
+    background-color: white;
+    color: #666;
+    position: absolute;
+    transform: scale(0.75) translateY(-15px);
+}
+
+.ktextarea textarea {
+    background-color: white;
+    border: none;
+    width: 99%;
+}
+
+/* Part date */
+.kdate input[type="date"] {
+    border: 0;
+    height: 40px;
+    display: flex;
+    padding: 0px 10px;
+}
+
+.kdate label {
+    left: 0px;
+    padding: 0px 5px;
+    background-color: white;
+    color: #666;
+    position: absolute;
+    transform: scale(0.75) translateY(-15px);
+}
+
+
+@media (min-width: 1250px) {
+    .cover-image {
+        position: absolute;
+        background-size: cover;
+        width: 100%;
+        max-height: 60vh;
+    }
+
+    #titre-hotel {
+        margin-top: 850px;
+        padding: 1rem;
+    }
+
+    #section-2 {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 1020px) {
+    #formulaire-avis {
+        height: 40vh;
+    }
+}

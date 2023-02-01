@@ -1,4 +1,7 @@
 /* PArt Qui sommes nous */
+#titre-corporate {
+    margin-top: 150px;
+}
 .component-contacts-a {
     width: 100%;
     height: 40px;
@@ -11,39 +14,34 @@
     line-height: 19px;
     letter-spacing: .05em;
 }
+/* Video Youtube */
 .cover-video iframe {
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 100px;
+    margin-top: 0;
     width: 100vw;
-    max-height: 100vh;
+    max-height: 50vh;
 }
-
-
 #part {
-    margin-top: 850px;
+    margin-top: 420px;
 }
-
-
+/* Image de separation */
+#img_separation {
+    width: 100%;
+    height: 40vw;
+    background-color: none;
+    background-image: url(/img/cahtedrale.jpeg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: -1%;
+    filter: grayscale(100%);
+}
+#img_separation:hover {
+    filter: grayscale(10%);
+}
 /* Responsive style */
-
-@media (min-width: 580px) {
-
-    /* .search-bar {
-        display: block;
-        max-width: 90%;
-    }
-    div.search-bar {
-        width:100%;
-    }
-}
-@media (min-width: 780px) {
-    div.search-bar {
-        max-width:100%;
-    } */
-}
-
 @media (min-width: 1280px) {
     /* div {
         flex-wrap: wrap;
@@ -51,6 +49,9 @@
 
     #section-2 img {
         width: 50%;
+    }
+    #part {
+        margin-top: 720px;
     }
 }
 
