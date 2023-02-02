@@ -6,6 +6,7 @@
 	height: 70vh;
 	width: 70vw;
 	max-width: 800px;
+	margin-top: 20%;
 }
 body::after {
 	background-image: url('/img/bedroom3.jpeg');
