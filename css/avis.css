@@ -82,6 +82,7 @@ les unes à côté des autres sans espacements. */
         display: flex;
         flex-wrap: wrap;
     }
+
 }
 @media (max-width: 1200px) {
     #resto {
@@ -96,3 +97,24 @@ les unes à côté des autres sans espacements. */
         height: 84vh;
     }
 }
+@media (min-width: 1200px) {
+    #resto {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+    }
+    #spa-bienetre {
+    position: relative; 
+    margin-bottom: 40px;   
+    }
+    #hotel {
+        display: block;
+        height: 84vh;
+    }
+}
+/* @media (min-width: 1224px) {
+    .form_avis {
+        width: 40%;
+        margin: 0;
+    }
+} */

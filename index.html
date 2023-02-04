@@ -20,56 +20,63 @@
       src="https://kit.fontawesome.com/896637ab26.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
 
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
     <title>Hotel Chambord</title>
   </head>
   <body>
-    <header class="flex align-center justify-between p1">
+    <header class="flex align-center p1">
+      <div class="drop-down">
       <!-- LOGO -->
-      <nav class="navbar-brand flex align-center justify-center flex-wrap">
-        <a href="index.html">
-          <img src="img/Hotel_Chambord_Paris_logo.png" alt="Logo" />
-          <!--Mon site web-->
-        </a>
-        <!-- NAV -->
-        <div class="active">
-          <ul class="flex font-text flex-wrap isActive">
-            <li class="p1"><a href="index.html">ACCEUIL</a></li>
-            <li class="p1">
-              <a href="#">NOS SEJOURS</a>
-              <ul>
-                <li><a href="chambres_et_gammes.html">Chambres & Suite</a></li>
-              </ul>
-            </li>            
-            <li class="p1">
-              <a href="#">À PROPOS</a>
-              <ul>
-                <li><a href="corporate.html">Qui sommes nous?</a></li>
-                <li><a href="avis.html">Nos Avis</a></li>
-                <li><a href="acces.html">Acces</a></li>
-                <li><a href="recrutement.html">Recrutement</a></li>
-                <li><a href="evenements.html">Evenements</a></li>
-                <li><a href="actualites.html">Presse</a></li>
-              </ul>
-            </li>
-            <li class="p1">
-              <a href="#">SERVICES</a>
-              <ul>
-                <li>
-                  <a href="restaurant_et_carte.html">Restaurant et cartes</a>
-                </li>
-                <li><a href="reservation.html">Reservation</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <!-- BURGER -->
-        <div class="menu-burger flex-end p1">
-          <button class="hamburger">&#9776;</button>
-        </div>
-      </nav>
+        <nav class="navbar-brand flex align-center justify-center flex-wrap" role="navigation">
+          <a href="index.html">
+            <img src="img/Hotel_Chambord_Paris_logo.png" alt="Logo" />
+            <!--Mon site web-->
+          </a>
+          <!-- NAV -->
+          <div id="active-nav" class="active">
+            <ul class="flex font-text flex-wrap isActive">
+              <li class="p1"><a href="index.html">ACCEUIL</a></li>
+              <li class="p1">
+                <a href="#">NOS SEJOURS</a>
+                <ul>
+                  <li><a href="chambres_et_gammes.html">Chambres & Suite</a></li>
+                </ul>
+              </li>            
+              <li class="p1">
+                <a href="#">À PROPOS</a>
+                <ul>
+                  <li><a href="corporate.html">Qui sommes nous?</a></li>
+                  <li><a href="avis.html">Nos Avis</a></li>
+                  <li><a href="acces.html">Acces</a></li>
+                  <li><a href="recrutement.html">Recrutement</a></li>
+                  <li><a href="evenements.html">Evenements</a></li>
+                  <li><a href="actualites.html">Presse</a></li>
+                </ul>
+              </li>
+              <li class="p1">
+                <a href="#">SERVICES</a>
+                <ul>
+                  <li>
+                    <a href="restaurant_et_carte.html">Restaurant et cartes</a>
+                  </li>
+                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- BURGER -->
+          <!-- <div class="menu-burger flex-end p1">
+            <button class="hamburger">&#9776;</button>
+          </div> -->      
+        </nav>
+      </div>
+      <div class="menu">
+        <a class="trigger" href="#">&equiv;</a>
+        <a class="close" href="#">&times;</a>
+      </div>
     </header>
 
     <!-- SECTION 1 -->
@@ -367,7 +374,7 @@
       <div class="flex justify-center">
         <img
           class="logo-image"
-          src="img/Hotel_Chambord_Paris (1).png"
+          src="img/Hotel_Chambord_Paris (3).png"
           alt="Logo Hotel Chambord"
         />
       </div>

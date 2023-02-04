@@ -13,6 +13,7 @@ ul li a {
     text-decoration: none !important;
     color: #F4F1EB;
 }
+
 div a {
     text-decoration: none;
 }
@@ -20,6 +21,10 @@ div a {
 ol,
 ul {
     padding-left: 0 !important;
+    
+}
+.navbar-brand { 
+    right: -100%;
 }
 
 .borderjc {
@@ -94,9 +99,11 @@ ul {
 }
 
 .font-size-text-b {
-    font-size: 17px;
+    font-size: 16px;
     color: #040606;
+    line-height: 24px;
 }
+
 .font-s {
     font-size: 30px;
     color: #FFFFFF;
@@ -108,6 +115,7 @@ ul {
     line-height: 1.2;
     color: #403833;
 }
+
 .big-title-w {
     margin-top: 0;
     font-weight: 500;
@@ -133,6 +141,11 @@ ul {
     width: 100vw !important;
 }
 
+.style {
+    opacity: 0.8;
+    color: #000101;
+}
+
 /* Margin */
 .margin-auto {
     margin: auto;
@@ -150,9 +163,11 @@ ul {
 .margin-bottom {
     margin-bottom: 50px;
 }
+
 .margin-top {
     margin-top: 50px;
 }
+
 /* Background */
 .bckg-g {
     background: #736A63;
@@ -173,6 +188,7 @@ ul {
 .bckg-bl {
     background: #040606;
 }
+
 .bckg-o {
     background: #E4B344;
 }
@@ -193,7 +209,6 @@ nav {
 }
 
 .bar-nav {
-    list-style-type: none;
     overflow: hidden;
 }
 
@@ -208,10 +223,53 @@ nav {
     max-height: 150px;
 }
 
-.menu-burger{
+/* HAMBURGER */
+.down {
+    top: 0;
+    transition: top 0.4s ease-in-out;
+}
+
+.menu {
+    box-sizing: content-box !important;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    border: 3px solid #fff;
+    background: #E4B344;
+    z-index: 999;
+    color: #fff;
+}
+/* .drop-down{
+    display: none;
+
+} */
+
+.menu a {
+    font-size: 46px;
+    color: #fff;
+
+}
+.close {
     display: none;
 }
+
+
+.trigger {
+    animation: menu-spin-back 0.4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.round {
+
+    animation: menu-spin 0.4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
 .hamburger {
+    display: none;
     background: none;
     color: #E4B344;
     border: 0;
@@ -242,9 +300,11 @@ nav li a {
 nav li a:hover {
     background-color: #E4B344;
 }
+
 nav li ul {
     display: none;
 }
+
 nav li:hover ul {
     display: block;
 }
@@ -253,12 +313,15 @@ nav li:hover ul {
 .carousel {
     margin: auto;
 }
+
 .prev {
     display: none;
 }
+
 .next {
     display: none;
 }
+
 .cover-image {
     background-size: cover;
     background-repeat: no-repeat;
@@ -266,6 +329,7 @@ nav li:hover ul {
     width: 100vw;
     max-height: 50vh;
 }
+
 /* Barre de réservation */
 .reservation-bar {
     width: 80vw;
@@ -332,6 +396,7 @@ button.reserver[type="submit"] {
 .titre-1 {
     margin-bottom: 20px;
 }
+
 h1 {
     color: #FFFFFF;
     font-size: 69px;
@@ -341,12 +406,14 @@ h1 {
     margin: 0;
     line-height: 1;
 }
+
 h2 {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 600;
     word-spacing: 0px;
 }
+
 .button {
     background-color: rgba(0, 0, 0, 0);
     border-style: solid;
@@ -355,6 +422,7 @@ h2 {
     width: 40vw;
 
 }
+
 /* .button-sejours {
     color: #F4F1EB;
 } */
@@ -377,11 +445,13 @@ section.style {
 .style {
     margin-top: 10px;
 }
+
 /************* MAIN *************/
 /*****PART  Chambres et gammes *****/
 main div a {
     text-decoration: none;
 }
+
 .card-sejours {
     border-radius: 10px;
     background-color: #FFFFFF;
@@ -390,6 +460,7 @@ main div a {
     text-align: center;
     margin-bottom: 20px;
 }
+
 /* Carte Chambre */
 .card-sejours img {
     width: 100%;
@@ -406,6 +477,7 @@ main div a {
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     cursor: pointer;
 }
+
 .button-c {
     text-decoration: none;
     color: #F4F1EB;
@@ -415,16 +487,19 @@ main div a {
     text-decoration: none;
     background-color: #E4B344;
 }
+
 .button-c:hover {
     background-color: #ffffff;
     color: #E4B344;
     transition: 0.3s;
     background-color: #FFFFFF;
 }
+
 .description {
     color: #000101;
     font-size: 14px;
 }
+
 /**** PART  Spa ****/
 .button-spa {
     text-decoration: none;
@@ -435,24 +510,28 @@ main div a {
     text-decoration: none;
     background-color: #E4B344;
 }
+
 .button-spa:hover {
     background-color: #ffffff;
     color: #E4B344;
     transition: 0.3s;
     background-color: #FFFFFF;
 }
+
 .same-size {
     width: 300px;
     height: 200px;
     overflow: hidden;
     background-size: cover;
 }
+
 .same-size img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     margin: auto;
 }
+
 /**** PART Restaurant ****/
 
 /**** PART Actualités ****/
@@ -513,15 +592,15 @@ input[type="submit"] {
 /* Image de separation */
 #img_2separation {
     width: 100%;
-    height: 40vw;
+    height: 30vw;
     background-color: none;
     background-image: url(/img/city.jpeg);
     background-attachment: fixed;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-left: -1%;
     filter: grayscale(100%);
 }
+
 #img_2separation:hover {
     filter: grayscale(10%);
 }
@@ -557,8 +636,9 @@ input[type="submit"] {
 } */
 @media (min-width: 580px) {
     div.reservation-bar {
-        width:50%;
+        width: 50%;
     }
+
     .cover-image {
         background-size: cover;
         width: 100%;
@@ -570,6 +650,7 @@ input[type="submit"] {
         margin-right: auto;
         padding: auto;
     }
+
     #chambres {
         width: 100%;
         padding: 1rem;
@@ -589,22 +670,27 @@ input[type="submit"] {
         height: 60%;
     }
 }
+
 @media (max-width: 600px) {
     #section5 {
         flex-wrap: wrap;
     }
-    .cover-image{
+
+    .cover-image {
         width: 100%;
     }
-    #carouselExampleCaptions{
+
+    #carouselExampleCaptions {
         width: 100%;
-    }            
+    }
 }
+
 @media (min-width: 600px) {
 
-    #carouselExampleCaptions{
+    #carouselExampleCaptions {
         width: 80%;
     }
+
     #section-4 img {
         width: 50%;
         height: 100%;
@@ -625,12 +711,13 @@ input[type="submit"] {
 }
 
 @media (min-width: 900px) {
-    .cover-image{
+    .cover-image {
         position: absolute;
         background-size: cover;
         width: 100%;
     }
-    #titre-hotel{
+
+    #titre-hotel {
         margin-top: 800px;
         padding: 1rem;
     }
@@ -639,14 +726,16 @@ input[type="submit"] {
         margin-top: 5px;
     }
 }
+
 @media (min-width: 1250px) {
-    .cover-image{
+    .cover-image {
         position: absolute;
         background-size: cover;
         width: 100%;
         max-height: 80vh;
     }
-    #titre-hotel{
+
+    #titre-hotel {
         margin-top: 850px;
         padding: 1rem;
     }
@@ -655,5 +744,3 @@ input[type="submit"] {
         margin-top: 5px;
     }
 }
-
-

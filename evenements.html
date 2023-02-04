@@ -30,15 +30,21 @@
       <!-- LOGO -->
       <nav class="navbar-brand flex align-center justify-center flex-wrap">
         <a href="index.html">
-          <img src="img/Hotel_Chambord_Paris (2).png" alt="Logo" />
+          <img src="img/Hotel_Chambord_Paris_logo.png" alt="Logo" />
           <!--Mon site web-->
         </a>
         <!-- NAV -->
         <div class="active">
           <ul class="flex font-text flex-wrap isActive">
-            <li class="p1"><a href="index.html">Accueil</a></li>
+            <li class="p1"><a href="index.html">ACCEUIL</a></li>
             <li class="p1">
-              <a href="#">À propos</a>
+              <a href="#">NOS SEJOURS</a>
+              <ul>
+                <li><a href="chambres_et_gammes.html">Chambres & Suite</a></li>
+              </ul>
+            </li>            
+            <li class="p1">
+              <a href="#">À PROPOS</a>
               <ul>
                 <li><a href="corporate.html">Qui sommes nous?</a></li>
                 <li><a href="avis.html">Nos Avis</a></li>
@@ -49,10 +55,8 @@
               </ul>
             </li>
             <li class="p1">
-              <a href="#">Services</a>
+              <a href="#">SERVICES</a>
               <ul>
-                <li><a href="chambres_et_gammes.html">Nos séjours</a></li>
-                <li><a href="#">Spa et bien-être</a></li>
                 <li>
                   <a href="restaurant_et_carte.html">Restaurant et cartes</a>
                 </li>
@@ -68,9 +72,21 @@
         </div>
       </nav>
     </header>
+    <!-- Titre et Infos Evenements -->
+    <div id="titre-corporate" class="titre-1 ">
+      <h2 class="text-center p1 text-color2">
+        ÉVÉNEMENTS
+      </h2>
+      <p class="w-100 p1 text-center font-size-text-b">
+        <span class="style">
+          Grâce à sa position centrale, l'Hôtel Chambord représente <br> le lieu idéal pour organiser des réunions et des événements. <br>
+          L'hôtel dispose d’une salle de réunion, équipée d'une connexion <br> Internet Wi-Fi et d'équipements techniques. 
+        </span> 
+      </p>  
+    </div>
     <div id="bloc_videos" class="margin-top">
         <a name="Videos" id="Videos"><h1>Videos - News</h1></a>
-          
+      <!-- Partie Video des évenements de l'hotel -->
      <div id="conteneur_videos">
               <div id="video_1">
                 <div class="videos">
@@ -80,7 +96,7 @@
                 <br />
                 En 2009, après deux ans d'absence, Candide revient très fort avec une nouvelle vidéo qui présente son nouveau registre et son nouveau style</p> 
               </div>
-              
+              <!-- 2éme video -->
               <div id="video_2">
                 <div class="videos">
                   <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FW5ODS7Z1_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
@@ -89,7 +105,7 @@
                 <br />
                 Un an après, en 2010, Candide sort le second opus de "Candide Kamera".  Au rendez-vous, des images sublimes sur une bande son sublime</p> 
             </div>
-             
+              <!-- 3éme video -->
               <div id="video_3">
                 <div class="videos">
                   <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cZK2eKllrWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
@@ -99,7 +115,7 @@
                 Pour donner raison au fameux dicton "Jamais deux sans trois", Candide a terminé la saga en début d'année. Je vous laisse, une nouvelle fois, admirer les prouesses de Monsieur</p> 
               </div>
               
-              
+              <!-- 4éme video -->              
               <div id="few_words">
                 <div class="videos">
                   <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SDpqlpNnl7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
@@ -111,7 +127,64 @@
         <p id="phrase_videos"> Retrouvez toutes ses autres merveilles sur Zapiks, YouTube, Vimeo et companie ...</p>
        </div>
       </div>
+    <!-- FOOTER -->
+    <footer
+      id="footer-section"
+      class="flex justify-around p1 font-size-text flex-wrap"
+    >
+      <!-- <div class="flex justify-between p2"> -->
+      <div class="link-part p1 w-30 text-color">
+        <ul>
+          <li class="footer-link"><a href="#">Accueil</a></li>
+          <li class="footer-link"><a href="#">Nos séjours</a></li>
+          <li class="footer-link"><a href="#">Restaurant</a></li>
+          <li class="footer-link"><a href="#">Spa et bien-être</a></li>
+          <li class="footer-link"><a href="#">Réservation</a></li>
+        </ul>
+      </div>
 
+      <div class="link-part p1 w-30">
+        <ul>
+          <li class="footer-link"><a href="#">Qui sommes nous?</a></li>
+          <li class="footer-link"><a href="contact.html">Contact</a></li>
+          <li class="footer-link"><a href="#">Avis & Accés</a></li>
+          <li class="footer-link"><a href="#">Recrutement</a></li>
+        </ul>
+      </div>
+
+      <div class="link-part p1 w-30">
+        <ul class="">
+          <li class="footer-link"><a href="#">Evénements</a></li>
+          <li class="footer-link"><a href="#">Actualités & Presse</a></li>
+          <li><a href="#">Mentions Légales</a></li>
+          <li><a href="#">CGV</a></li>
+        </ul>
+      </div>
+        <!-- Icônes réseaux sociaux -->
+        <div class=" social-links w-100">
+          <div class=" flex p1  justify-center">
+            <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+          </div>
+          <p class="w-100 text-center">Paiement sécurisé
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-paypal"></i>
+          </p>
+        </div>
+
+      <div class="language-selector p1">
+        <form class="selection">
+          <label for="language">Choisir la langue:</label>
+          <select id="language" name="language">
+            <option value="fr">Français</option>
+            <option value="en">Anglais</option>
+          </select>
+        </form>
+      </div>
+      <!-- </div> -->
+    </footer>
+    <p class="copyright">Copyright Hôtel Chambord &copy; 2022</p>
         
   </body>
   
