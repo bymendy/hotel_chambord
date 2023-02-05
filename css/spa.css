@@ -1,0 +1,124 @@
+/* Global config */
+:root {
+
+    --main-color: #E4B344;
+    --white-color: #fff;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.5;
+
+}
+
+/* HEADER Image */
+
+header {
+    height: 10vh;
+}
+.image-spa {
+    width: 100%;
+    height: 40vw;
+    background-color: none;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;   
+}
+/* Icone - Titre et Texte */
+.spa-header {
+    text-align: center;
+    max-width: 57rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+.spa-header {
+    color: #E4B344;
+    margin-bottom: 8rem;
+}
+
+.spa-header .headline {
+    color: black;
+}
+/* SPA PAGE  */
+.section-spa .col-3 img {
+    width: 100%;
+    transform: scale(1.15);
+}
+
+.section-spa .col-3 {
+    flex: 1;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.section-spa .fa-spa,
+.our-menu .fa-utensils {
+    font-size: 4rem;
+}
+/* Bouton de Reservation */
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    border: .1rem solid var(--white-color);
+    border-radius: .2rem;
+    cursor: pointer;
+    outline: none;
+    padding: 2rem 4rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    overflow: hidden;
+    position: relative;
+}
+.button-container {
+    text-align: center;
+    padding: 10rem 0;
+}
+.btn-white {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    transition: color .5s;
+    z-index: 100;
+}
+.btn-white::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 0;
+    height: 100%;
+    transform: skewX(25deg);
+    z-index: -1;
+    transition: width .7s;
+}
+.btn-white::before {
+    background-color: #E4B344;
+}
+.btn-white:hover::before {
+    width: 120%;
+}
+
+/* Responsive Style*/
+@media screen and (max-width: 900px) {
+    p {
+        font-size: 17px;
+    }
+    .book-btn {
+        border: .2rem solid transparent;
+        background-color: transparent;
+        transition: all .3s;
+    }
+
+    .book-btn:hover {
+        border: .2rem solid var(--white-color);
+        opacity: 1;
+    }
+}

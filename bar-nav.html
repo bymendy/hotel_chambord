@@ -1,126 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bar-nav.css">
+    <link rel="stylesheet" href="css/restaurant.css" />
+    <link rel="stylesheet" href="/css/coporate.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/avis.css" />
+    <link rel="stylesheet" href="css/actualites.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/owl.carousel.scss" />
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+
+    <script
+      src="https://kit.fontawesome.com/896637ab26.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/jquery-3.6.3.min.js"></script>
-</head>
-<body>
-    <header id="nav-bckg flex">        
-        <div class="drop-down ">
-            <div class="navbar flex">
-                <div class="burger">
-                    <span class="line-1"></span>
-                    <span class="line-2"></span>
-                    <span class="line-3"></span>
-                </div> 
 
-            </div>
-                <div  class="mobileNav_tier2" >
+    <title>Hotel Chambord</title>
+  </head>
+  <body>
+    <header class="flex align-center p1">
+      <div class="drop-down">
+        <!-- LOGO -->
+        <nav
+          class="navbar-brand flex align-center justify-center flex-wrap"
+          role="navigation"
+        >
+          <a href="index.html">
+            <img src="img/Hotel_Chambord_Paris_logo.png" alt="Logo" />
+            <!--Mon site web-->
+          </a>
+          <!-- NAV -->
+          <div id="active-nav" class="active">
+            <ul class="flex font-text flex-wrap isActive">
+              <li class="p1"><a href="index.html">ACCEUIL</a></li>
+              <li class="p1">
+                <a href="#">NOS SEJOURS</a>
+                <ul>
                   <li>
-                    <input class="mobileNav_tier2_item-search" placeholder="Recherche" />
+                    <a href="chambres_et_gammes.html">Chambres & Suite</a>
                   </li>
-
-            </div>
-
-        </div>
- 
-        <nav class="mobileNav font-12 ">
-            <ul class="mobileNav_tier1">
-             <li class="active">
-                <a href="index.html" class="mobileNav_tier1_item">
-                   <span class="icon-sections">
-                 <!-- Icones de sections -->
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="40px" height="35px" viewBox="0 0 75 20" xml:space="preserve">
-                    <g>
-                    <path fill="#FFFFFF" d="M55.496,31.991c0,1.627-1.002,2.947-2.239,2.947H31.614c-1.236,0-2.239-1.32-2.239-2.947l0,0
-                        c0-1.628,1.002-2.948,2.239-2.948h21.643C54.494,29.043,55.496,30.363,55.496,31.991L55.496,31.991z"/>
-                        <circle fill="#FFFFFF" cx="23.004" cy="31.991" r="3.5"/>
-                            </g>
-                            <g>
-                            <path fill="#FFFFFF" d="M55.496,21.324c0,1.627-1.002,2.947-2.239,2.947H31.614c-1.236,0-2.239-1.32-2.239-2.947l0,0
-                            c0-1.628,1.002-2.948,2.239-2.948h21.643C54.494,18.376,55.496,19.696,55.496,21.324L55.496,21.324z"/>
-                        <circle fill="#FFFFFF" cx="23.004" cy="21.324" r="3.5"/>
-                        </g>
-                        <g>
-                         <path fill="#FFFFFF" d="M55.496,10.657c0,1.627-1.002,2.947-2.239,2.947H31.614c-1.236,0-2.239-1.32-2.239-2.947l0,0
-                        c0-1.628,1.002-2.948,2.239-2.948h21.643C54.494,7.709,55.496,9.029,55.496,10.657L55.496,10.657z"/>
-                         <circle fill="#FFFFFF" cx="23.004" cy="10.657" r="3.5"/>
-                            </g>
-                        </svg>
-                     <!-- Section titre -->
-                    </span>
-                    <span class="icon-text font-12 ">ACCEUIL</span>
-                </a>
-                <div class="mobileNav_tier2"></div>
-                </li>
-
-            <!-- Icones Acces -->
-            <a href="acces.html" class="mobileNav_tier1_item">
-            <span class="icon-locations">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           width="40px" height="35px" viewBox="0 0 16 16" xml:space="preserve">
-                <path fill="#FFFFFF" d="M8.032,1.194c-2.5,0-4.526,2.026-4.526,4.526s4.526,8.085,4.526,8.085s4.526-5.585,4.526-8.085
-                S10.533,1.194,8.032,1.194z M8.032,8.182c-1.392,0-2.52-1.128-2.52-2.52s1.128-2.52,2.52-2.52s2.52,1.128,2.52,2.52
-                S9.424,8.182,8.032,8.182z"/>
-                </svg>
-              </span>
-              <span class="icon-text font-12 ">ACCES</span>
-            </a>
-
-            <a href="avis.html" class="mobileNav_tier1_item">
-              <span class="icon-partners">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           width="40px" height="35px" viewBox="29.782 0 16 16" xml:space="preserve">
-            <polygon fill="#FFFFFF" points="38.199,2.549 39.552,6.713 43.931,6.713 40.388,9.287 41.742,13.451 38.199,10.878 34.656,13.451 
-          36.01,9.287 32.467,6.713 36.845,6.713 "/>
-            </svg>
-              </span>
-              <span class="icon-text font-12 ">AVIS</span>
-      
-            </a>
-
-            <!-- Icone de contact -->
-            <a href="contact.html" class="mobileNav_tier1_item">
-              <span class="icon-contact">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           width="40px" height="35px" viewBox="51.282 0 16 16" xml:space="preserve">
-            <g>
-          <path fill="#FFFFFF" d="M53.768,4.261c-0.018,0.08-0.049,0.155-0.049,0.24v6.997c0,0.178,0.049,0.338,0.122,0.488l2.763-5.702
-              L53.768,4.261z"/>
-          <path fill="#FFFFFF" d="M64.754,11.939c0.059-0.135,0.092-0.283,0.092-0.441V4.501c0-0.085-0.031-0.161-0.049-0.24l-2.834,2.022
-              L64.754,11.939z"/>
-          <path fill="#FFFFFF" d="M63.725,3.381H54.84c-0.197,0-0.374,0.065-0.535,0.155l4.978,3.551l4.979-3.551
-              C64.099,3.446,63.923,3.381,63.725,3.381z"/>
-          <path fill="#FFFFFF" d="M59.282,8.195l-1.933-1.379l-2.786,5.747c0.09,0.023,0.179,0.057,0.276,0.057h8.886
-              c0.115,0,0.222-0.033,0.326-0.066l-2.833-5.74L59.282,8.195z"/>
-            </g>
-            </svg>
-              </span>
-              <span class="icon-text font-12 ">CONTACT</span>
-            
-            </a>
-            </ul>  
-             <!--Liens vers les autres Pages  -->
-            <ul class="mobileNav_tier2 margin-top">
-              <li><a href="#" class="mobileNav_tier2_item font-16 ">Chambres et Suite</a></li>
-              <li><a href="#" class="mobileNav_tier2_item font-16 ">Spa et Bien-être</a></li>
-              <li><a href="#" class="mobileNav_tier2_item font-16 ">Restaurant</a></li>
-              <li><a href="#" class="mobileNav_tier2_item font-16 ">Reservation</a></li>
-              <li><a href="#" class="mobileNav_tier2_item font-16 ">Qui sommes nous?</a></li>
-              <li><a href="#" class="mobileNav_tier2_item font-16 ">Actualites et Presse</a></li>
-              <li><a href="#" class="mobileNav_tier2_item font-16 ">Evenements</a></li>
-              <li><a href="#" class="mobileNav_tier2_item font-16 ">Recrutement</a></li>
+                </ul>
+              </li>
+              <li class="p1">
+                <a href="#">SERVICES</a>
+                <ul>
+                  <li>
+                    <a href="spa.html">Spa et Bien être</a>
+                  </li>
+                  <li>
+                    <a href="restaurant_et_carte.html">Restaurant et cartes</a>
+                  </li>
+                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </li>
+              <li class="p1">
+                <a href="#">À PROPOS</a>
+                <ul>
+                  <li><a href="corporate.html">Qui sommes nous?</a></li>
+                  <li><a href="avis.html">Nos Avis</a></li>
+                  <li><a href="acces.html">Acces</a></li>
+                  <li><a href="recrutement.html">Recrutement</a></li>
+                  <li><a href="evenements.html">Evenements</a></li>
+                  <li><a href="actualites.html">Presse</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-       </nav>
+          </div>
+        </nav>
+      </div>
+      <!-- BURGER -->
+
+      <div class="side-nav text-color">
+        <ul class="abs-center nav-options">
+          <li class="rela-block nav-link the-menu"><a href="index.html">ACCEUIL</a></li>
+          <li class="rela-block nav-link the-menu"><a href="chambres_et_gammes.html">CHAMBRES & SUITE</a></li>
+          <li class="rela-block nav-link the-menu"><a href="spa.html">SPA & BIEN ETRE</a></li>
+          <li class="rela-block nav-link the-menu"><a href="restaurant_et_carte.html">RESTAURANT</a></li>
+          <li class="rela-block nav-link the-menu"><a href="reservation.html">RESERVATION</a></li>
+          <li class="rela-block nav-link the-menu"><a href="contact.html">CONTACT</a></li>
+          <li class="rela-block nav-link the-menu"><a href="corporate.html">QUI SOMMES NOUS?</a></li>
+          <li class="rela-block nav-link the-menu"><a href="avis.html">NOS AVIS</a></li>
+        </ul>
+      </div>
+      <div class="rela-block top-section">
+        <div class="nav-button top">
+          <div class="abs-center nav-bars"></div>
+        </div>
+        <div class="search-button">
+          <div class="abs-center magnefying-glass"></div>
+        </div>
+      </div>
     </header>
 
-    <script src="js/app-burger.js"></script>
+  <script src="js/app-burger.js"></script>
+
 </body>
 </html>

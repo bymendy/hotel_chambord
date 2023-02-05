@@ -1,19 +1,343 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="css/style.css" />
-    <title>Restaurant et cartes</title>
-</head>
-<body>
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/restaurant.css" />
+    <link rel="stylesheet" href="/css/coporate.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/avis.css" />
+    <link rel="stylesheet" href="css/actualites.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/owl.carousel.scss" />
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/896637ab26.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Restaurant</title>
+  </head>
+  <body>
+    <header class="flex align-center p1">
+      <div class="drop-down">
+        <!-- LOGO -->
+        <nav
+          class="navbar-brand flex align-center justify-center flex-wrap"
+          role="navigation"
+        >
+          <a href="index.html">
+            <img src="img/Hotel_Chambord_Paris_logo.png" alt="Logo" />
+            <!--Mon site web-->
+          </a>
+          <!-- NAV -->
+          <div id="active-nav" class="active">
+            <ul class="flex font-text flex-wrap isActive">
+              <li class="p1"><a href="index.html">ACCEUIL</a></li>
+              <li class="p1">
+                <a href="#">NOS SEJOURS</a>
+                <ul>
+                  <li>
+                    <a href="chambres_et_gammes.html">Chambres & Suite</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="p1">
+                <a href="#">SERVICES</a>
+                <ul>
+                  <li>
+                    <a href="spa.html">Spa et Bien être</a>
+                  </li>
+                  <li>
+                    <a href="restaurant_et_carte.html">Restaurant et cartes</a>
+                  </li>
+                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </li>
+              <li class="p1">
+                <a href="#">À PROPOS</a>
+                <ul>
+                  <li><a href="corporate.html">Qui sommes nous?</a></li>
+                  <li><a href="avis.html">Nos Avis</a></li>
+                  <li><a href="acces.html">Acces</a></li>
+                  <li><a href="recrutement.html">Recrutement</a></li>
+                  <li><a href="evenements.html">Evenements</a></li>
+                  <li><a href="actualites.html">Presse</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- BURGER -->
+
+      <div class="side-nav text-color">
+        <ul class="abs-center nav-options">
+          <li class="rela-block"><a href="index.html">ACCEUIL</a></li>
+          <li class="rela-block"><a href="chambres_et_gammes.html">CHAMBRES & SUITE</a></li>         
+          <li class="rela-block"><a href="spa.html">SPA & BIEN ETRE</a></li>          
+          <li class="rela-block"><a href="restaurant_et_carte.html">RESTAURANT</a></li>          
+          <li class="rela-block"><a href="reservation.html">RESERVATION</a></li>
+          <li class="rela-block"><a href="contact.html">CONTACT</a></li>
+          <li class="rela-block"><a href="corporate.html">QUI SOMMES NOUS?</a></li>
+          <li class="rela-block"><a href="avis.html">NOS AVIS</a></li>
+        </ul>
+      </div>
+      <div class="rela-block top-section">
+        <div class="nav-button top">
+          <div class="abs-center nav-bars"></div>
+        </div>
+        <div class="search-button">
+          <div class="abs-center magnefying-glass"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Haut de page -->
     <h1>Restaurant</h1>
-    
-    
-</body>
+    <div class="margin-auto">
+      <img src="img/cuisine.jpeg" class="image-cuisine" />
+    </div>
+    <!-- Block -->
+
+    <div class="rela-block tab">
+      <div class="abs-center">
+        We've got you covered with the freshest updog an the smoothest goodfam.
+        <div class="text-center p2">
+          <a href="carte_menu.html" role="button" target="_blank">
+            <span class="button-spa"> Voir la carte </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rela-block words-section tea">
+      <div class="content-container">
+        <h2>Amazing Tastes</h2>
+        <p class="light">
+          Sriracha readymade 8-bit, offal selfies yuccie beard trust fund craft
+          beer art party tacos. Cliche food truck kickstarter, crucifix tofu
+          kinfolk mlkshk artisan. Readymade post-ironic freegan letterpress
+          PBR&B 8-bit.
+        </p>
+      </div>
+    </div>
+    <div class="rela-block words-section leaves right">
+      <div class="content-container">
+        <h2>Wholesome Ingredients</h2>
+        <p class="light">
+          Flannel health goth bushwick deep v. Kogi butcher pabst retro, street
+          art small batch craft beer typewriter. Pinterest semiotics selvage
+          organic whatever, farm-to-table direct trade intelligentsia health
+          goth normcore biodiesel street art. Before they sold out narwhal
+          bicycle rights hella, messenger bag banh mi tacos pickled tote bag ugh
+          tofu.
+        </p>
+      </div>
+    </div>
+
+    <div class="rela-block spacer"></div>
+
+    <section class="food flex">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="customers-food" class="owl-carousel">
+              <!-- ENTREE -->
+              <div class="item">
+                <div class="shadow-effect flex">
+                  <img
+                    class="img-responsive"
+                    src="https://image.freepik.com/free-photo/top-view-of-tasty-noodles-with-prawns_1203-1769.jpg"
+                    alt=""
+                  />
+                  <div class="item-details flex">
+                    <h2>
+                      Chicken for two Roasted <span>$21</span>
+                      <p class="font-size-text">
+                        There was a time when Chinese food in this country meant
+                        (Americanized) Cantonese food.
+                      </p>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <!-- PLATS -->
+
+              <div class="item">
+                <div class="shadow-effect flex">
+                  <img
+                    class="img-responsive"
+                    src="https://image.freepik.com/free-photo/burguer-with-garnish_1088-72.jpg"
+                    alt=""
+                  />
+                  <div class="item-details flex">
+                    <h2>
+                      Chicken for two Roasted <span>$21</span>
+                      <p class="font-size-text">
+                        There was a time when Chinese food in this country meant
+                        (Americanized) Cantonese food.
+                      </p>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="shadow-effect flex">
+                  <img
+                    class="img-responsive"
+                    src="https://image.freepik.com/free-photo/delicious-pastry-with-chicken_1203-1616.jpg"
+                    alt=""
+                  />
+                  <div class="item-details flex">
+                    <h2>
+                      Chicken for two Roasted <span>$21</span>
+                      <p class="font-size-text">
+                        There was a time when Chinese food in this country meant
+                        (Americanized) Cantonese food.
+                      </p>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <!-- DESSERT -->
+
+              <div class="item">
+                <div class="shadow-effect flex">
+                  <img
+                    class="img-responsive"
+                    src="https://image.freepik.com/free-photo/dishes-with-healthy-waffles_1220-367.jpg"
+                    alt=""
+                  />
+                  <div class="item-details flex">
+                    <h2>
+                      Chicken for two Roasted <span>$21</span>
+                      <p class="font-size-text">
+                        There was a time when Chinese food in this country meant
+                        (Americanized) Cantonese food.
+                      </p>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Image de separation -->
+    <div id="img_food"></div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="back-to-top">
+          <a href="#section-1"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="footer__content row">
+          <div class="col-3">
+            <ul>
+              <li class="footer-link"><a href="index.html"> <p>Accueil</p> </a></li>
+              <li class="footer-link"><a href="chambres_et_gammes.html"><p>Nos séjours</p> </a></li>
+              <li class="footer-link"><a href="restaurant_et_carte.html"> <p>Restaurant</p> </a></li>
+              <li class="footer-link"><a href="spa.html"><p>Spa et bien-être</p> </a></li>
+              <li class="footer-link"><a href="reservation.html"> <p>Réservation</p> </a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li class=><a href="corporate.html"> <p>Qui sommes nous?</p> </a></li>
+              <li class="footer-link"><a href="contact.html"><p>Contact</p></a></li>
+              <li class="footer-link"><a href="avis.html"><p>Avis & Accés</p></a></li>
+              <li class="footer-link"><a href="recrutement.html"><p>Recrutement</p> </a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+                <li class="footer-link"><a href="evenements.html"> <p>Evénements</p></a></li>
+                <li class="footer-link"><a href="actualites.html"><p>Actualités & Presse</p></a></li>
+                <li><a href="mentions.html"><p>Mentions Légales</p></a></li>
+                <li><a href="cgv.html"><p>CGV</p></a></li>
+              </ul>
+          </div>
+        <!-- Icônes de Paiement -->
+          <div class="col-3">
+            <h3>Methode de paiement</h3>
+            <p>Paiement sécurisé</p>
+            <ul class="payment-methods">
+              <li>
+                <a href="#">
+                  <i class="fab fa-paypal"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-cc-visa"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-cc-mastercard"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-apple-pay"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        <!-- Icônes réseaux sociaux -->
+          <div class="col-3">
+            <h3>Réseaux sociaux</h3>
+            <p>Suivez nous sur nos réseaux sociaux.</p>
+            <ul class="social-icons">
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-tripadvisor"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        <!-- Selection de la langue -->
+          <div class="col-3">
+            <form class="selection">
+              <label for="language"><p>Choisir la langue:</p></label>
+              <select id="language" name="language">
+                <option value="fr">Français</option>
+                <option value="en">Anglais</option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <p class="copyright">Copyright Hôtel Chambord &copy; 2022</p>
+      </div>
+    </footer>
+
+    <script src="js/app-burger.js"></script>
+
+  </body>
 </html>
