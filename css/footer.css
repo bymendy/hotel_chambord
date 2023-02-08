@@ -6,9 +6,9 @@
     --main-color: #E4B344;
     --white-color: #fff;
 }
-html {
-    font-size: 12px;
-}
+/* html {
+    font-size: 15px;
+} */
 p {
     font-size: 17px;
     line-height: 1.5;
@@ -52,6 +52,7 @@ footer {
     justify-content: space-between;
     padding: 7rem 0 4rem;
     position: relative;
+
 }
 /* Option Langue */
 .language-selector {

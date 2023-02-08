@@ -18,6 +18,10 @@ div a {
     text-decoration: none;
 }
 
+html {
+    font-size: 16px;
+}
+
 ol,
 ul {
     padding-left: 0 !important;
@@ -94,9 +98,20 @@ ul {
 
 }
 
+.font-text-w {
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+
+}
+
 .font-size-text {
     font-size: 17px;
     color: #FFFFFF;
+}
+
+.font-size-16 {
+    font-size: 16px;
 }
 
 .font-size-text-b {
@@ -109,7 +124,9 @@ ul {
     font-size: 30px;
     color: #FFFFFF;
 }
-
+.color-o {
+    color: #E4B344;
+}
 .big-title {
     margin-top: 0;
     font-weight: 500;
@@ -207,11 +224,13 @@ nav {
     left: 0;
     width: 100vw;
     z-index: 1;
+    opacity: 0.8;
 }
 
+/* 
 .bar-nav {
     overflow: hidden;
-}
+} */
 
 .nav-logo {
     display: flex;
@@ -260,6 +279,7 @@ nav li:hover ul {
     margin: auto;
 
 }
+
 .abs-center {
     display: false;
     position: absolute;
@@ -272,19 +292,23 @@ nav li:hover ul {
     text-align: center;
     width: 88%;
 }
+
 .menu-container.displayed {
     z-index: 200;
     opacity: 1;
     transition: 0.35s ease, opacity 0.5s ease;
 }
+
 .menu-container.displayed .menu-tab {
     top: 50%;
 }
+
 .menu-container .close {
     color: #fff;
     margin: 30px;
     cursor: pointer;
 }
+
 .side-nav {
     display: false;
     position: fixed;
@@ -300,6 +324,7 @@ nav li:hover ul {
     overflow: hidden;
     transition: 0.35s ease, height 0s 0.35s ease, width 0.35s ease;
 }
+
 /* Menu Nav aprés ouverture */
 .side-nav.nav-open {
     height: 400px;
@@ -309,38 +334,47 @@ nav li:hover ul {
     box-shadow: 2px 4px 26px 2px rgba(0, 0, 0, 0.35);
     transition: 0.35s ease, height 0.4s 0.35s cubic-bezier(0.85, 0, 0.15, 1), width 0.4s 0.75s cubic-bezier(0.85, 0, 0.15, 1);
 }
+
 .nav-header {
     top: -20%;
     left: 48.5%;
     transition: 0.35s ease, top 0s 0.2s ease;
 }
+
 .nav-header.nav-open {
     top: 11%;
     transition: 0.35s ease, top 0.4s 1s cubic-bezier(0.85, 0, 0.15, 1);
 }
+
 .nav-options {
     width: 100%;
     height: auto;
     top: calc(50% + 5px);
 }
+
 .nav-options li {
     width: 70%;
     padding: 12px 0px;
     cursor: pointer;
     left: -120%;
 }
+
 .nav-options li:hover {
     color: #E4B344;
 }
+
 .nav-options.nav-open li {
     left: -2%;
 }
+
 .nav-options.nav-open li:nth-child(1) {
     transition: 0.35s ease, left 0.35s 0.9s cubic-bezier(0, 0, 0.15, 1.3);
 }
+
 .nav-options.nav-open li:nth-child(2) {
     transition: 0.35s ease, left 0.35s 0.95s cubic-bezier(0, 0, 0.15, 1.3);
 }
+
 .nav-options.nav-open li:nth-child(3) {
     transition: 0.35s ease, left 0.35s 1s cubic-bezier(0, 0, 0.15, 1.3);
 }
@@ -384,6 +418,7 @@ nav li:hover ul {
     width: 30px;
     cursor: pointer;
 }
+
 .nav-button {
     left: 25px;
 }
@@ -391,6 +426,7 @@ nav li:hover ul {
 .nav-button:hover .nav-bars {
     background-color: #fff;
 }
+
 .nav-button:hover .nav-bars:before,
 .nav-button:hover .nav-bars:after {
     background-color: #fff;
@@ -514,9 +550,9 @@ nav li:hover ul {
 .cover-image {
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 100px;
+    margin-top: 0px;
     width: 100vw;
-    max-height: 50vh;
+    max-height: 40vh;
 }
 
 /* Barre de réservation */
@@ -581,7 +617,12 @@ button.reserver[type="submit"] {
 
 /* SECTION 1 */
 .titre-1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+#hotel-t {
+    margin: top 6px;
+    ;
 }
 
 h1 {
@@ -710,12 +751,30 @@ main div a {
 
 .same-size img {
     object-fit: cover;
-    width: 100%;
+    max-width: 80%;
     height: 100%;
     margin: auto;
 }
 
+/* .border-radius {
+    border-radius: 100%;
+} */
+
 /**** PART Restaurant ****/
+/* about */
+
+#section4 .pic {
+    height: 600px;
+    width: 600px;
+    background: url("/img/cuisine.jpeg") fixed no-repeat center;
+    background-size: cover;
+    border-bottom: 600px solid transparent;
+    border-left: 100px solid #040606;
+}
+
+#section4 .box {
+    flex-direction: column;
+}
 
 /**** PART Actualités ****/
 #news {
@@ -807,7 +866,7 @@ input[type="submit"] {
         background-size: cover;
         width: 100%;
         max-width: 100%;
-        max-height: 100vh;
+        max-height: 80vh;
         /* margin: auto; */
         /* padding-left: 1rem; */
         margin-top: 90px;
@@ -832,6 +891,12 @@ input[type="submit"] {
     }
 }
 
+@media (max-width: 780px) {
+    .drop-down {
+        display: none;
+    }
+}
+
 @media (max-width: 600px) {
     #section5 {
         flex-wrap: wrap;
@@ -846,15 +911,19 @@ input[type="submit"] {
     }
 }
 
+@media (min-width: 580px) {
+    .nav-button {
+        display: block;
+    }
+}
+
 @media (min-width: 600px) {
 
     #carouselExampleCaptions {
         width: 80%;
     }
-
-    #section-4 img {
-        width: 50%;
-        height: 100%;
+    #news img {
+        max-height: 60%;
     }
 }
 
@@ -869,6 +938,24 @@ input[type="submit"] {
         width: 30%;
     }
 
+}
+
+@media (min-width: 900px) {
+    .cover-image {
+        top: 0;
+        position: absolute;
+        background-size: cover;
+        width: 100%;
+    }
+
+    #titre-hotel {
+        margin-top: 800px;
+        padding: 1rem;
+    }
+
+    #section-2 {
+        margin-top: 5px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -889,19 +976,48 @@ input[type="submit"] {
 }
 
 @media (min-width: 1250px) {
+    p {
+        font-size: 20px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
     .cover-image {
-        position: absolute;
         background-size: cover;
         width: 100%;
-        max-height: 80vh;
+        max-height: 100vh;
+        margin-top: 0;
     }
 
     #titre-hotel {
-        margin-top: 850px;
+        margin-top: 550px;
         padding: 1rem;
     }
 
     #section-2 {
-        margin-top: 5px;
+        margin-top: 950px;
     }
+
+    .reservation-bar {
+        max-width: 50%;
+    }
+
+    #press img {
+        max-width: 80%;
+        height: 80%;
+    }
+
+    #news img {
+        max-width: 80%;
+        height: 100%;
+    }
+
+    #section4 img {
+        width: 100%;
+        max-height: 100%;
+        margin: 0;
+    }
+
 }

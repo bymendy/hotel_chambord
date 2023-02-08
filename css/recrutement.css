@@ -38,7 +38,7 @@ body {
     padding-top: 35px;
     padding-bottom: 50px;
     width: 450px;
-    float: left;
+    /* float: left; */
     left: 50%;
     position: absolute;
     margin-top: 30px;
@@ -175,16 +175,7 @@ textarea:focus {
 }
 
 /* Responsive style */
-@media only screen and (max-width: 580px) {
-    #form-div {
-        left: 3%;
-        margin-right: 3%;
-        width: 88%;
-        margin-left: 0;
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-}
+
 @media only screen and (max-width: 800px) {
     #form-div {
         left: 3%;
@@ -234,5 +225,29 @@ textarea:focus {
     }
     .feedback-input {
         max-width: 100%;
+    }
+}
+@media only screen and (max-width: 580px) {
+    #form-div {
+
+        margin-right: 3%;
+        width: 100%;
+        margin-left: 0;
+        /* padding-left: 3%; */
+   
+        position: relative;
+        top: 0;
+    }
+    .recrut{
+        height: 150px;
+    }
+    .t-1{
+        margin-top: 0;
+    }
+    p {
+        margin-right: 0%;
+        width:69%;
+        margin-left: 0;
+        margin-top: 100px;
     }
 }

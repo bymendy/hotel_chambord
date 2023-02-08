@@ -115,36 +115,37 @@
       </div>
     </section>
 
-    <div class="titre-1">
-      <h1 class="text-center text-color2">L’hôtel Chambord</h1>
-    </div>
-    <div>
-      <h2 id="titre-hotel" class="text-center p2 text-color2">
-        Séjours bien-être et détente dans la ville lumiére
-      </h2>
-    </div>
 
+    <div>
+
+
+    </div>
     <!-- SECTION 2 -->
     <section id="section-2">
+      <div class="titre-1">
+        <h1 id="titre-hotel" class="text-center p2 text-color2">Hôtel chambord
+          <p>Séjours bien-être et détente dans la ville lumiére.</p> 
+        </h1>
+      </div>
       <div class="element">
-        <p>
+        <p class="p1 font-size-16">
           <span class="style">
             L’hôtel Chambord est dédié aux <strong>séjours bien-être</strong> et
-            détente en France
+            détente en France. <br> Vous pourrez alors pleinement profiter de ses nombreux théâtres, musées, <br> et  jardins, ou encore flâner, faire du shopping et goûter à la gastronomie parisienne.
           </span>
         </p>
-
+      </div>
+      <!-- Barre de réservation -->
+      <div class="reservation-bar">
+        <form class="formulaire">
+          <label for="date">Date de réservation :</label>
+          <input type="date" id="date" name="date" />
+          <label for="time">Heure de réservation :</label>
+          <input type="time" id="time" name="time" />
+          <button class="reserver" type="submit">Réserver</button>
+        </form>
       </div>
     </section>
-    <!-- Barre de réservation -->
-    <div class="reservation-bar">
-      <form class="formulaire">
-        <label for="date">Date de réservation :</label>
-        <input type="date" id="date" name="date" />
-        <label for="time">Heure de réservation :</label>
-        <input type="time" id="time" name="time" />
-        <button class="reserver" type="submit">Réserver</button>
-      </form>
     </div>
     <!-- Ligne de separation -->
     <div class="line-wrapper">
@@ -155,9 +156,9 @@
       <!-- Chambres et gammes -->
       <div class="element">
       <h2 class="big-title text-center p1">Nos séjours
-      <p class="  elemnt margin-auto text-center"></h2>
-        <span class="style">
-          Trouvez votre séjour idéal qui correspond à vos attentes, à vos
+      <p class="  elemnt margin-auto text-center "></h2>
+        <span class="style text-color2">
+          Trouvez votre séjour idéal qui correspond à vos attentes, à vos <br>
           destinations de rêve et votre budget, en quelques clics !
         </span>
       </p>
@@ -307,74 +308,47 @@
       </div>
 
       <!-- Restaurant et cartes -->
-      <section id="section4">
-        <h2 class="big-title text-center p1">Restaurant</h2>
-        <!-- Image à Droite-->
-        <div class="flex flex-wrap element p2">
-          <div class="w-50">
-            <img
-              class="same-size w-100"
-              src="img/food1.jpeg"
-              alt="Menu du restaurant"
-            />
-          </div>
-          <div class="w-50 p1 align-center flex-wrap">
-            <h3>Entrées</h3>
-            <p class="text-color2">
-              Nous proposons des entrées créatives préparées selon les arrivages
-              et le cycle des saisons.
-            </p>
-            <a href="restaurant_et_cartes.html" class="read-more">Voir plus</a>
-          </div>
-        </div>
-        <!-- Image à Gauche -->
-        <div class="flex flex-wrap element p2">
-          <div class="w-50 p1 align-center flex-wrap">
-            <h3>Plats</h3>
-            <p class="text-color2">
-              Des plats savoureux à découvrir et à partager.
-            </p>
-            <a href="restaurant_et_cartes.html" class="read-more">Voir plus</a>
-          </div>
-          <div class="w-50">
-            <img
-              class="same-size w-100"
-              src="img/food.jpeg"
-              alt="Menu du restaurant"
-            />
-          </div>
-        </div>
-        <div class="flex flex-wrap element p2 margin-bottom">
-          <div class="w-50">
-            <img
-              class="same-size w-100"
-              src="img/dessert.jpeg"
-              alt="Menu du restaurant"
-            />
-          </div>
-          <div class="w-50 p1 align-center flex-wrap">
-            <h3>Desserts</h3>
-            <p class="text-color2">
-              Pour instant d'émotion, venez déguster nos desserts.
-            </p>
-            <a href="restaurant_et_cartes.html" class="read-more">Voir plus</a>
-          </div>
-        </div>
-      </section>
 
+<section id="section4" class="container-fluid flex justify-center margin-bottom margin-top bckg-bl">
+  <div class="row ">
+      <div class="col-sm-4 text-center box">
+          <!-- title -->
+          <div class="title my-3">
+              <h1 class="text-center text-white ">restaurant</h1>
+              <div class="title-underline"></div>
+              <p class="p1 text-center font-size-text">Nous proposons des entrées créatives préparées selon les arrivages et le cycle des saisons. Nos plats sont savoureux à découvrir et à partager pour un instant d'émotion.</p>
+          </div>
+          <div class="text-center p2">
+            <a href="restaurant_et_carte.html" role="button">
+              <span class="button-spa"> Découvrir </span>
+            </a>
+          </div>
+      </div>
+      <div class="col-sm-8 pic"></div>
+  </div>
+</section>
+      <!-- Presse -->
       <section id="section5" class="flex">
-        <!-- Presse -->
         <div id="press" class="bckg-w w-100 flex-wrap element">
-          <h2 class="big-title text-center p1">Presse</h2>
           <article class="text-center p1">
-            <h2>Titre de l'article</h2>
-            <p>Description de l'article</p>
-            <a href="actualites.html">Lire l'article</a>
+            <img
+            class="same-size w-100"
+            src="img/neutral luxury photo-pearl.png"
+            alt="Image de l'actualité"
+          />
+          <h2 class="p1 text-color2">Le succès</h2>
+            <p class="p1 text-center w-100">Dans une interview publiée <br> dans le journal 
+              La Tribune de l'hôtellerie, <br> Candide Thovex est revenu...</p>
+            <a href="actualites.html">Voir plus</a>
           </article>
           <article class="text-center p1">
-            <h2>Titre de l'article 2</h2>
-            <p>Description de l'article 2</p>
-            <a href="actualites.html">Lire l'article 2</a>
+            <img
+            class="same-size w-100"
+            src="img/Jaune et Blanc Magasin Retour du commerce Paysage Bannière (800 × 400 px).png"
+          />
+            <h2 class="p1 text-color2">Nouvelle Boutique </h2>
+            <p class="p1 text-center w-100">Venez voir la nouvelle boutique de <br> luxe qui a ouvert ses portes ce lundi 22 Juin...</p>
+            <a href="actualites.html">Voir plus</a>
           </article>
         </div>
         <!-- Actualités  -->
@@ -382,11 +356,13 @@
           <h2 class="big-title text-center p1 w-100">Actualités</h2>
           <img
             class="same-size w-100"
-            src="img/louvre.jpg"
+            src="img/walk.jpeg"
             alt="Image de l'actualité"
           />
           <div class="w-100 p1 align-center flex-wrap">
-            <p class="text-color2">Contenu de l'actualité</p>
+            <p class="text-color2">Journal des Palaces</p>
+            <p>Le Journal des Palaces vous apporte les actualités <br> et les offres d'emploi de l'hôtellerie ultra-luxe et luxe <br>
+              Fondé en 2004, le Journal des Palaces est le quotidien <br> B2B de l'hôtellerie...</p>
             <a href="actualites.html" class="read-more">Lire la suite</a>
           </div>
         </aside>
@@ -417,10 +393,10 @@
     <!-- FOOTER -->
     <footer>
       <div class="container">
-        <div class="back-to-top">
+        <div class="back-to-top ">
           <a href="#section-1"><i class="fas fa-chevron-up"></i></a>
         </div>
-        <div class="footer__content row">
+        <div class="footer__content row justify-center">
           <div class="col-3">
             <ul>
               <li class="footer-link"><a href="index.html"> <p>Accueil</p> </a></li>
