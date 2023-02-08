@@ -21,31 +21,35 @@ body::after {
 	width: 100vw;
 	z-index: -1;
 }
+
 /* Partie Infos CHAMBRES */
 .panel-container {
 	background-color: #222;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-	display: flex;
-	height: 70vh;
-	width: 70vw;
-	max-width: 800px;
+	display: block;
+	height: 50vh;
+	max-width: 80vw;
 	margin-top: 20%;
 }
+
 /* Image à droite */
 .right {
 	background-image: url('/img/bedroom6.jfif');
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	width: calc(50% + 20px);
+	max-width: 40%;
+
+
+	width: calc(100%);
 }
+
 .test {
-    border: 2px solid red;
+	border: 2px solid red;
 }
+
 /* Infos chambre à gauche */
 .left {
 	color: #fff;
-	display: flex;
+	display: block;
 	flex-direction: column;
 	padding: 40px;
 	position: relative;
@@ -69,14 +73,16 @@ body::after {
 	font-size: 13px;
 	margin: 3px 0;
 }
+
 /* Bouton confirmation reservation */
 button a {
-    list-style: none ;
-    text-decoration: none;
-    color: #F4F1EB;
+	list-style: none;
+	text-decoration: none;
+	color: #F4F1EB;
 }
+
 button a:hover {
-    color: #E4B344;
+	color: #E4B344;
 }
 
 .left button {
@@ -100,16 +106,61 @@ button a:hover {
 	height: 0%;
 	width: 0;
 }
-@media (min-width: 1350px) {
-    section .panel-container {
+
+/* Responsive style */
+
+@media screen and (min-width: 780px) {
+	.panel-container {
+		background-color: #222;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 		display: flex;
-		flex-wrap: wrap;
-		max-width: 100vw;
-		max-height: 100%;
-    }
-	.left {
-		flex-wrap: wrap;
-		width: 100%;
+		height: 80vh;
+		width: 80vw;
+		margin-top: 10%;
 	}
 
+	/* Image à droite */
+	.right {
+		background-image: url('/img/bedroom6.jfif');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		width: calc(50% + 20px);
+	}
+
+	.test {
+		border: 2px solid red;
+	}
+
+	/* Infos chambre à gauche */
+	.left {
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		padding: 40px;
+		position: relative;
+		width: calc(50% - 10px);
+	}
+
+	.left h2 {
+		margin: 0;
+	}
+
+	.left h3 {
+		border-bottom: 1px solid #333;
+		font-weight: 400;
+		font-size: 16px;
+		margin: 30px 0 0;
+	}
+
+	.left p {
+		color: #E4B344;
+		font-weight: 500;
+		font-size: 13px;
+		margin: 3px 0;
+	}
+
+	div img {
+		display: none;
+	}
 }

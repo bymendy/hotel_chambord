@@ -4,8 +4,7 @@
 #bloc_videos {
     width: 100%;
     height: auto;
-    margin-left: -1%;
-    background-color: rgba(157, 156, 156, 0.2);
+    background-color: rgba(190, 177, 79, 0.612);
 }
 
 #bloc_videos h1 {
@@ -100,7 +99,7 @@
     padding-top: 80%;
     padding-bottom: 2%;
     text-align: center;
-    color: rgba(122, 64, 66, 1);
+    color: black;
     font-size: 1.3vw;
     font-weight: 200;
     font-style: italic;
@@ -116,3 +115,5 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+/* Responsive style */
+

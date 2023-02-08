@@ -107,77 +107,40 @@
         </div>
       </div>
     </header>
-     <div class="container">
     <div class="recrut ">
-      <h1 class="t-1 p1">Rejoignez notre équipe</h1>
-      <p class="p1">Remplissez le formulaire ci-dessous pour postuler.</p>
+      <h1 class="t-1 ">Rejoignez notre équipe</h1>
+      <p>Remplissez le formulaire ci-dessous pour postuler.</p>
     </div>
-    </div>
-    <div id=" form-main" class="">
-      <div id="form-div" class="col-3">
-        <form class="form" id="form1">
-          <p class="name">
-            <input
-              name="name"
-              type="text"
-              class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
-              placeholder="Nom"
-              id="name"
-            />
-          </p>
-          <p class="name">
-            <input
-              name="name"
-              type="text"
-              class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
-              placeholder="Prenom"
-              id="name"
-            />
-          </p>
-
-          <p class="numero">
-            <input
-              name="phone"
-              type="tel"
-              class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
-              placeholder="Mobile"
-              id="tel"
-            />
-          </p>
-
-          <p class="email">
-            <input
-              name="phone"
-              type="text"
-              class="validate[required,custom[email]] feedback-input"
-              id="email"
-              placeholder="Email"
-            />
-          </p>
-
-          <p class="text">
-            <textarea
-              name="text"
-              class="validate[required,length[6,300]] feedback-input"
-              id="comment"
-              placeholder="Message"
-            ></textarea>
-          </p>
-
-          <div class="submit">
-            <input type="submit" value="ENVOYER" id="button-blue" />
-            <div class="ease"></div>
-          </div>
-        </form>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="nom">Nom </label>
+        <input type="text" id="nom" name="nom" class="form-control">
       </div>
-    </div>
+      <div class="form-group">
+        <label for="prenom">Prénom </label>
+        <input type="text" id="prenom" name="prenom" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="email">Email </label>
+        <input type="email" id="email" name="email" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="message">Message </label>
+        <textarea id="message" name="message" class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="cv">Envoyer votre CV </label>
+        <input type="file" id="cv" name="cv" class="form-control">
+      </div>
+      <input type="submit" value="Envoyer" class="btn btn-primary">
+    </form>
+
+    
     <!-- FOOTER -->
+
     <!-- FOOTER -->
     <footer>
         <div id="foot-recrut" class="container">
-          <div class="back-to-top">
-            <a href="#section-1"><i class="fas fa-chevron-up"></i></a>
-          </div>
           <div class="footer__content row">
             <div class="col-3">
               <ul>

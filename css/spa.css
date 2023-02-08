@@ -1,33 +1,35 @@
 /* Global config */
 :root {
 
-    --main-color: #E4B344;
-    --white-color: #fff;
+  --main-color: #E4B344;
+  --white-color: #fff;
 }
 
 section {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 p {
-    font-size: 17px;
-    line-height: 1.5;
+  font-size: 17px;
+  line-height: 1.5;
 
 }
 
 /* HEADER Image */
 
 header {
-    height: 10vh;
+  height: 10vh;
 }
+
 .image-spa {
-    width: 100%;
-    height: 40vw;
-    background-color: none;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;   
+  width: 100%;
+  height: 40vw;
+  background-color: none;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
+
 /* Icone - Titre et Texte */
 .font-spa {
   font-size: 17px;
@@ -35,223 +37,232 @@ header {
 
 /* SPA PAGE  */
 .section-spa .col-3 img {
-    width: 100%;
-    transform: scale(1.15);
+  width: 100%;
+  transform: scale(1.15);
 }
 
 .section-spa .col-3 {
-    flex: 1;
-    margin-bottom: 0;
-    overflow: hidden;
+  flex: 1;
+  margin-bottom: 0;
+  overflow: hidden;
 }
+
 .section-spa .fa-spa,
 .our-menu .fa-utensils {
-    font-size: 4rem;
+  font-size: 4rem;
 }
+
 /* Bouton de Reservation */
 /* BUTTONS */
 
 .btn {
-    display: inline-block;
-    background: transparent;
-    border: .1rem solid var(--white-color);
-    border-radius: .2rem;
-    cursor: pointer;
-    outline: none;
-    padding: 2rem 4rem;
-    text-transform: uppercase;
-    font-family: inherit;
-    font-size: 1.2rem;
-    font-weight: 400;
-    letter-spacing: .2rem;
-    overflow: hidden;
-    position: relative;
+  display: inline-block;
+  background: transparent;
+  border: .1rem solid var(--white-color);
+  border-radius: .2rem;
+  cursor: pointer;
+  outline: none;
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+  overflow: hidden;
+  position: relative;
 }
+
 .button-container {
-    text-align: center;
-    padding: 5rem 0;
+  text-align: center;
+  padding: 5rem 0;
 }
+
 .btn-white {
-    border: 1px solid var(--main-color);
-    color: var(--main-color);
-    transition: color .5s;
-    z-index: 100;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  transition: color .5s;
+  z-index: 100;
 }
+
 .btn-white::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -10%;
-    width: 0;
-    height: 100%;
-    transform: skewX(25deg);
-    z-index: -1;
-    transition: width .7s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 0;
+  height: 100%;
+  transform: skewX(25deg);
+  z-index: -1;
+  transition: width .7s;
 }
+
 .btn-white::before {
-    background-color: #E4B344;
+  background-color: #E4B344;
 }
+
 .btn-white:hover::before {
-    width: 120%;
+  width: 120%;
 }
+
 /* Spa Section */
 
 #spa-section {
-    position: relative;
-    padding: 75px 0;
-  }
-  
-  .spa-image-container {
-    display: relative;
-    max-width: 700px;
-    margin: 10px auto;
-    text-align: center;
-  }
-  
-  .spa-image {
-    position: relative;
-    display: inline-block;
-    margin: 10px;
-    height: 280px;
-    width: 280px;
-    border-radius: 50%;
-    font-family: "Montserrat";
-    cursor: pointer;
-    transition: 150ms all ease-in-out;
-  }
-  
-  .spa-image:before {
-    content: "";
-    background-color: rgba(11, 11, 11, 0.5);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 50%;
-    transition: 150ms all ease-in-out;
-  }
-  
-  .spa-image-1 {
-    background: url("https://s3-media1.fl.yelpcdn.com/bphoto/AIFletB2ERrIv4CaQ1TU4A/o.jpg");
-    background-size: cover;
-    background-position: 0 0;
-  }
-  
-  .spa-image-2 {
-    background: url("https://s3-media4.fl.yelpcdn.com/bphoto/n8Q5403fYZgcC4CRzKwoFA/o.jpg");
-    background-size: cover;
-    background-position: 0 -40px;
-  }
-  
-  .spa-image-3 {
-    background: url("https://s3-media3.fl.yelpcdn.com/bphoto/wLBCkdzroZGrfStaUDvnfA/o.jpg");
-    background-size: cover;
-    background-position: 0 -40px;
-  }
-  
-  .spa-image-4 {
-    background: url("https://s3-media3.fl.yelpcdn.com/bphoto/BDCB1TclIGoj5MJmJa5Ung/o.jpg");
-    background-size: cover;
-    background-position: 0 0;
-  }
-  
-  .spa-image-header {
-    position: relative;
-    top: 130px;
-    color: #fff;
-    font-size: 20px; 
-    font-weight: 700;
-    text-transform: uppercase;
-    z-index: 2;
-    transition: 150ms all ease-in-out;
-  }
-  
-  .learn-more-btn {
-    position: relative;
-    top: 147px;
-    color: #fff;
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    opacity: 0;
-    z-index: 2;
-    transition: 150ms all ease-in-out;
-  }
-  
-  .spa-image:hover:before {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .spa-image:hover .spa-image-header {
-    top: 118px;
-  }
-  
-  .spa-image:hover .learn-more-btn {
-    opacity: 1;
-    top: 125px;
-  }
-  
+  position: relative;
+  padding: 75px 0;
+}
 
-  /* Philosophy Section */
-  
-  #philosophy-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 150px 0;
-    background-image: url("https://images.unsplash.com/photo-1517498327491-f903e1e281cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80");
-    background-size: cover;
-    background-position: 0 20%;
-  }
-  
-  #philosophy-section:after {
-    content: "";
-    background-color: rgba(11, 11, 11, 0.7);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  .philosophy-container {
-    position: relative;
-    color: #fff;
-    z-index: 2;
-    width: 500px;
-    padding: 25px 15px;
-    margin: 0 40px;
-  }
-  
-  .philosophy-h1 {
-    font-family: "Poiret One";
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .philosophy-p {
-    font-size: 16px;
-    font-family: "Montserrat";
-    line-height: 30px;
-  }
+.spa-image-container {
+  display: relative;
+  max-width: 700px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.spa-image {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  font-family: "Montserrat";
+  cursor: pointer;
+  transition: 150ms all ease-in-out;
+}
+
+.spa-image:before {
+  content: "";
+  background-color: rgba(11, 11, 11, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  transition: 150ms all ease-in-out;
+}
+
+.spa-image-1 {
+  background: url("https://s3-media1.fl.yelpcdn.com/bphoto/AIFletB2ERrIv4CaQ1TU4A/o.jpg");
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.spa-image-2 {
+  background: url("https://s3-media4.fl.yelpcdn.com/bphoto/n8Q5403fYZgcC4CRzKwoFA/o.jpg");
+  background-size: cover;
+  background-position: 0 -40px;
+}
+
+.spa-image-3 {
+  background: url("https://s3-media3.fl.yelpcdn.com/bphoto/wLBCkdzroZGrfStaUDvnfA/o.jpg");
+  background-size: cover;
+  background-position: 0 -40px;
+}
+
+.spa-image-4 {
+  background: url("https://s3-media3.fl.yelpcdn.com/bphoto/BDCB1TclIGoj5MJmJa5Ung/o.jpg");
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.spa-image-header {
+  position: relative;
+  top: 130px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 2;
+  transition: 150ms all ease-in-out;
+}
+
+.learn-more-btn {
+  position: relative;
+  top: 147px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+  z-index: 2;
+  transition: 150ms all ease-in-out;
+}
+
+.spa-image:hover:before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.spa-image:hover .spa-image-header {
+  top: 118px;
+}
+
+.spa-image:hover .learn-more-btn {
+  opacity: 1;
+  top: 125px;
+}
+
+
+/* Philosophy Section */
+
+#philosophy-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+  background-image: url("https://images.unsplash.com/photo-1517498327491-f903e1e281cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80");
+  background-size: cover;
+  background-position: 0 20%;
+}
+
+#philosophy-section:after {
+  content: "";
+  background-color: rgba(11, 11, 11, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.philosophy-container {
+  position: relative;
+  color: #fff;
+  z-index: 2;
+  width: 500px;
+  padding: 25px 15px;
+  margin: 0 40px;
+}
+
+.philosophy-h1 {
+  font-family: "Poiret One";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.philosophy-p {
+  font-size: 16px;
+  font-family: "Montserrat";
+  line-height: 30px;
+}
 
 /* Responsive Style*/
 @media screen and (max-width: 900px) {
-    p {
-        font-size: 17px;
-    }
-    .book-btn {
-        border: .2rem solid transparent;
-        background-color: transparent;
-        transition: all .3s;
-    }
+  p {
+    font-size: 17px;
+  }
 
-    .book-btn:hover {
-        border: .2rem solid var(--white-color);
-        opacity: 1;
-    }
+  .book-btn {
+    border: .2rem solid transparent;
+    background-color: transparent;
+    transition: all .3s;
+  }
+
+  .book-btn:hover {
+    border: .2rem solid var(--white-color);
+    opacity: 1;
+  }
 }

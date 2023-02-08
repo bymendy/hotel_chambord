@@ -1,7 +1,7 @@
-.recrut {
+/* .recrut {
     margin-top: 150px;
     height: 850px;
-}
+} */
 
 
 body {
@@ -19,188 +19,99 @@ body {
     color: #E4B344;
 }
 
-#feedback-page {
-    text-align: center;
-}
-
-
-
-#form-main {
-    width: 100%;
-    float: left;
-    padding-top: 0px;
-}
-
-#form-div {
-    background-color: rgba(72, 72, 72, 0.4);
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 35px;
-    padding-bottom: 50px;
-    width: 450px;
-    /* float: left; */
-    left: 50%;
-    position: absolute;
-    margin-top: 30px;
-    margin-left: -490px;
-    top: 300px;
-}
-
-
-.feedback-input {
-    color: #3c3c3c;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 0;
-    line-height: 22px;
-    background-color: #fbfbfb;
-    padding: 13px 13px 13px 54px;
-    margin-bottom: 10px;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 3px solid rgba(0, 0, 0, 0);
-}
-
-.feedback-input:focus {
-    background: #fff;
-    box-shadow: 0;
-    border: 3px solid #E4B344;
-    color: #E4B344;
-    outline: none;
-    padding: 13px 13px 13px 54px;
-}
-
-.focused {
-    color: #E4B344;
-    border: #E4B344 solid 3px;
-}
-
 /* Icons ---------------------------------- */
-#name {
-    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-    background-size: 30px 30px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
-}
-
-#name:focus {
-    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-    background-size: 30px 30px;
-    background-position: 8px 5px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
-}
-
-#email {
-    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-    background-size: 30px 30px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
-}
-
-#email:focus {
-    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-    background-size: 30px 30px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
-}
-
-#comment {
-    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-    background-size: 30px 30px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
-}
-
-textarea {
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
     width: 100%;
-    height: 150px;
-    line-height: 150%;
-    resize: vertical;
-}
-
-input:hover,
-textarea:hover,
-input:focus,
-textarea:focus {
-    background-color: white;
-}
-
-/* Boutton envoyer */
-#button-blue {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    float: left;
-    width: 100%;
-    border: #fbfbfb solid 4px;
-    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    width: 100px;
+    padding: 10px;
     background-color: #E4B344;
     color: white;
-    font-size: 24px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    margin-top: -4px;
-    font-weight: 700;
-}
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
 
-#button-blue:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color: #0493bd;
-}
+    background-color: #fff;
+    color: #E4B344;
 
-.submit:hover {
-    color: #3498db;
-}
+  }
+  
 
-.ease {
-    width: 0px;
-    height: 74px;
-    background-color: #fbfbfb;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -o-transition: .3s ease;
-    -ms-transition: .3s ease;
-    transition: .3s ease;
-}
-
-.submit:hover .ease {
-    width: 100%;
-    background-color: white;
-}
 
 /* Responsive style */
-
-@media only screen and (max-width: 800px) {
-    #form-div {
-        left: 3%;
-        margin-right: 3%;
-        width: 88%;
-        margin-left: 0;
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-    body {
-        position: absolute;
-        width: 100%;
-    }
-    #form-div {
-        left: 3%;
-        margin-right: 3%;
-        width: 80%;
-        /* margin-left: 10%; */
-        padding-left: 3%;
-        padding-right: 3%;
+@media only screen and (min-width: 1250px) {
+    /* body {
+       display: block;
     }
     #foot-recrut{
         display: block;
+    } */
+    .t-1{
+        margin-top: 100px;
+        font-size: 30px;
+        padding: 3rem;
+        margin-left: 14%;
     }
+    p{
+        top: 0;
+        margin-left: 17% ;
+    }
+    form {
+        width: 100%;
+        left: 10%;
+    }
+    input[type="submit"] {
+        width: 120px;
+        padding: 10px;
+        margin: 3rem;
+        margin-left: 25%;
+      }
+
 }
+@media only screen and (max-width: 780px) {
+
+    .t-1{
+        margin-top: 100px;
+        font-size: 25px;
+        padding: 3rem;
+    }
+    p{
+        margin-left: 2rem ;
+    }
+    form {
+        max-width: 100%;
+    }
+    input[type="submit"] {
+        width: 120px;
+        padding: 10px;
+        margin: 3rem;
+        margin-left: 25%;
+      }
+     
+}
+
 @media only screen and (max-width: 600px) {
     p {
         left: -50%;
@@ -212,42 +123,48 @@ textarea:focus {
         margin: auto;
         padding: auto;
     }
-    #form-div {
-        left: 3%;
-        margin-right: 3%;
-        width: 100%;
-        margin-left: 0;
-        /* padding-left: 3%; */
-        padding-right: 3%;
-    }
-    .navbar-brand{
-        display: none;
-    }
-    .feedback-input {
-        max-width: 100%;
-    }
-}
-@media only screen and (max-width: 580px) {
-    #form-div {
-
-        margin-right: 3%;
-        width: 100%;
-        margin-left: 0;
-        /* padding-left: 3%; */
-   
-        position: relative;
-        top: 0;
-    }
-    .recrut{
-        height: 150px;
-    }
     .t-1{
-        margin-top: 0;
+        margin-top: 40px;
+        font-size: 17px;
+        padding: 3rem;
     }
-    p {
-        margin-right: 0%;
-        width:69%;
-        margin-left: 0;
-        margin-top: 100px;
+    p{
+        top: 10px;
+        margin-left: 2rem ;
     }
+    form {
+        max-width: 80%;
+    }
+    body {
+        position: absolute;
+    }
+    input[type="submit"] {
+        width: 120px;
+        padding: 10px;
+        margin: 3rem;
+        margin-left: 25%;
+      }
+
 }
+@media (max-width: 576px) {
+    form {
+      padding: 20px;
+    }
+  
+    label {
+      font-size: 14px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      font-size: 14px;
+    }
+  
+    input[type="submit"] {
+        width: 120px;
+        padding: 10px;
+        margin: 3rem;
+        margin-left: 25%;
+      }
+  }

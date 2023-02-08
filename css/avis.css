@@ -1,12 +1,11 @@
 /* Nos Avis */
 .image-header {
     background-image: url(/img/beautiful.webp);
-    height: 500px;
+    height: 550px;
     background-size: cover;
     align-items: center;
     justify-content: center;
 }
-
 /* ETOILES */
 .fa-star {
     color: gray;
@@ -42,79 +41,54 @@ les unes à côté des autres sans espacements. */
 }
 
 /* LES AVIS */
-#hotel {
-    height: 40vh;
-    padding: 2rem;
-    padding-bottom: 2rem;
-}
-#resto {
-
-    padding: 2rem;
-    padding-bottom: 2rem;
-}
-#spa-bienetre {
-    padding: 2rem;
-    padding-bottom: 2rem;
-}
-.review-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 2%;
-    height: 50%;
-}
-.review {
-    width: 30%;
-    background-color: #fff;
-    padding: 10px;
+#testimonials {
+    padding: 5rem 0;
+  }
+  
+  .testimonial-title {
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 2px;
-    transition: 0.3s;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #555;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+  
+  .testimonial-box .checked {
+    color: #ff9529;
+  }
+  
+  .testimonial-box .testimonial-text {
+    margin: 1rem 0;
+    color: #444;
+  }
+  
+  .testimonial-box {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .customer-photo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+  }
+  /* Form bouton envoyer */
+  .button-avis {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: #E4B344;
 }
-
-/* Responsive style */
-@media (max-width: 1120px) {
-    .review {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-}
-@media (max-width: 1200px) {
-    #resto {
-    width: 100%;
-    position: relative;
-    }
-    #spa-bienetre {
-    position: relative;    
-    }
-    #hotel {
-        display: block;
-        height: 84vh;
-    }
-}
-@media (min-width: 1200px) {
-    #resto {
-    width: 100%;
-    position: relative;
-    margin-bottom: 40px;
-    }
-    #spa-bienetre {
-    position: relative; 
-    margin-bottom: 40px;   
-    }
-    #hotel {
-        display: block;
-        height: 84vh;
-    }
-}
-/* @media (min-width: 1224px) {
-    .form_avis {
-        width: 40%;
-        margin: 0;
-    }
-} */
