@@ -23,52 +23,86 @@
       src="https://kit.fontawesome.com/896637ab26.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+
 
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
     <title>Chambre Confort</title>
   </head>
   <body>
-    <header class="flex align-center justify-between p1">
-      <!-- LOGO -->
-      <nav class="navbar-brand flex align-center justify-center flex-wrap">
-        <a href="index.html">
-          <img src="img/Hotel_Chambord_Paris_logo.png" alt="Logo" />
-          <!--Mon site web-->
-        </a>
-        <!-- NAV -->
-        <div class="active">
-          <ul class="flex font-text flex-wrap isActive">
-            <li class="p1"><a href="index.html">Accueil</a></li>
-            <li class="p1">
-              <a href="#">À propos</a>
-              <ul>
-                <li><a href="corporate.html">Qui sommes nous?</a></li>
-                <li><a href="avis.html">Nos Avis</a></li>
-                <li><a href="acces.html">Acces</a></li>
-                <li><a href="recrutement.html">Recrutement</a></li>
-                <li><a href="evenements.html">Evenements</a></li>
-                <li><a href="actualites.html">Presse</a></li>
-              </ul>
-            </li>
-            <li class="p1">
-              <a href="#">Services</a>
-              <ul>
-                <li><a href="chambres_et_gammes.html">Nos séjours</a></li>
-                <li><a href="#">Spa et bien-être</a></li>
-                <li>
-                  <a href="restaurant_et_carte.html">Restaurant et cartes</a>
-                </li>
-                <li><a href="reservation.html">Reservation</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </li>
-          </ul>
+    <header class="flex align-center p1">
+      <div class="drop-down">
+        <!-- LOGO -->
+        <nav
+          class="navbar-brand flex align-center justify-center flex-wrap"
+          role="navigation"
+        >
+          <a href="index.html">
+            <img src="img/Hotel_Chambord_Paris_logo.png" alt="Logo" />
+            <!--Mon site web-->
+          </a>
+          <!-- NAV -->
+          <div id="active-nav" class="active">
+            <ul class="flex font-text flex-wrap isActive">
+              <li class="p1"><a href="index.html">ACCEUIL</a></li>
+              <li class="p1">
+                <a href="#">NOS SEJOURS</a>
+                <ul>
+                  <li>
+                    <a href="chambres_et_gammes.html">Chambres & Suite</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="p1">
+                <a href="#">SERVICES</a>
+                <ul>
+                  <li>
+                    <a href="spa.html">Spa et Bien être</a>
+                  </li>
+                  <li>
+                    <a href="restaurant_et_carte.html">Restaurant et cartes</a>
+                  </li>
+                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </li>
+              <li class="p1">
+                <a href="#">À PROPOS</a>
+                <ul>
+                  <li><a href="corporate.html">Qui sommes nous?</a></li>
+                  <li><a href="avis.html">Nos Avis</a></li>
+                  <li><a href="acces.html">Acces</a></li>
+                  <li><a href="recrutement.html">Recrutement</a></li>
+                  <li><a href="evenements.html">Evenements</a></li>
+                  <li><a href="actualites.html">Presse</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- BURGER -->
+
+      <div class="side-nav text-color">
+        <ul class="abs-center nav-options">
+          <li class="rela-block"><a href="index.html">ACCEUIL</a></li>
+          <li class="rela-block"><a href="chambres_et_gammes.html">CHAMBRES & SUITE</a></li>         
+          <li class="rela-block"><a href="spa.html">SPA & BIEN ETRE</a></li>          
+          <li class="rela-block"><a href="restaurant_et_carte.html">RESTAURANT</a></li>          
+          <li class="rela-block"><a href="reservation.html">RESERVATION</a></li>
+          <li class="rela-block"><a href="contact.html">CONTACT</a></li>
+          <li class="rela-block"><a href="corporate.html">QUI SOMMES NOUS?</a></li>
+          <li class="rela-block"><a href="avis.html">NOS AVIS</a></li>
+        </ul>
+      </div>
+      <div class="rela-block top-section">
+        <div class="nav-button top">
+          <div class="abs-center nav-bars"></div>
         </div>
-        <!-- BURGER -->
-        <div class="menu-burger flex-end p1">
-          <button class="hamburger">&#9776;</button>
+        <div class="search-button">
+          <div class="abs-center magnefying-glass"></div>
         </div>
-      </nav>
+      </div>
     </header>
     <main>
         </section>
@@ -89,14 +123,11 @@
             <button><a href="reservation.html" target="_blank">Confirm Reservation</a>
             </button>
           </div>
-          <div class="right"></div>
+          <div class="right"><img src="img/bedroom3.jpeg" alt="Chambre confort"></div>
         </section>
-         <!-- Bouton de reservation  -->
-        <div class="floating-text">
-          <a href="reservation.html" target="_blank">Reservation</a>
-        </div>
     </main>
 
+    <script src="js/app-burger.js"></script>
 
   </body>
 

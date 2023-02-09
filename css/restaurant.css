@@ -99,7 +99,6 @@
     width: calc(100% - 530px);
   }
 /* ABOUT */
-/* ......//about us//...... */
 
 #about {
   padding: 50px 0;
@@ -179,6 +178,7 @@
     text-align: center;
     padding: 20px;
     margin-bottom: 80px;
+    margin-top: 80px;
 }
 
 #customers-food .item-details {

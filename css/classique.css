@@ -3,7 +3,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
 	margin: 0;
 }
 
@@ -15,8 +14,6 @@ body::after {
 	content: '';
 	filter: blur(5px);
 	position: absolute;
-	top: 0px;
-	left: 0px;
 	height: 100vh;
 	width: 100vw;
 	z-index: -1;
@@ -24,36 +21,23 @@ body::after {
 
 /* Partie Infos CHAMBRES */
 .panel-container {
-	background-color: #222;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-	display: block;
-	height: 50vh;
+
+	display: flex;
+	height: 100vh;
 	max-width: 80vw;
-	margin-top: 20%;
+	margin-top: 40%;
 }
 
-/* Image à droite */
-.right {
-	background-image: url('/img/bedroom6.jfif');
-	background-repeat: no-repeat;
-	max-width: 40%;
-
-
-	width: calc(100%);
-}
-
-.test {
-	border: 2px solid red;
-}
 
 /* Infos chambre à gauche */
 .left {
 	color: #fff;
 	display: block;
 	flex-direction: column;
-	padding: 40px;
-	position: relative;
+	padding: 0px;
+	display: flex;
 	width: calc(50% - 10px);
+	height: 80vh;
 }
 
 .left h2 {
@@ -68,7 +52,7 @@ body::after {
 }
 
 .left p {
-	color: #E4B344;
+	color: black;
 	font-weight: 500;
 	font-size: 13px;
 	margin: 3px 0;
@@ -88,31 +72,64 @@ button a:hover {
 .left button {
 	background-color: transparent;
 	border: 1px solid #E4B344;
-	color: #fff;
+	color: #E4B344;
 	cursor: pointer;
 	font-weight: 500;
 	padding: 15px 30px;
 	margin-top: auto;
 }
 
-.left::after {
-	border-top: 0 solid transparent;
-	border-bottom: 70vh solid transparent;
-	border-left: 30px solid #222;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 100%;
-	height: 0%;
-	width: 0;
+/* Responsive style */
+@media screen and (min-width: 360px) {
+	.panel-container {
+		height: 100vh;
+		width: 100vw;
+		margin-top: 10%;
+	}
+
+	/* Infos chambre à gauche */
+	p {
+		font-size: 17px;
+	}
+
+	.left {
+		color: #fff;
+		display: block;
+		padding: 40px;
+		width: 100%;
+	}
+
+	.left h3 {
+		border-bottom: 1px solid #333;
+		font-weight: 400;
+		font-size: 16px;
+	}
+
+	.left p {
+		color: #fff;
+		font-weight: 500;
+		font-size: 16px;
+		margin: 3px 0;
+	}
+
+	div img {
+		width: 100%;
+	}
+
+	.left button {
+		background-color: transparent;
+		border: 1px solid #E4B344;
+		color: #fff;
+		cursor: pointer;
+		font-weight: 500;
+		padding: 15px 30px;
+		margin-top: auto;
+	}
+
 }
 
-/* Responsive style */
-
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 800px) {
 	.panel-container {
-		background-color: #222;
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 		display: flex;
 		height: 80vh;
 		width: 80vw;
@@ -123,23 +140,17 @@ button a:hover {
 	.right {
 		background-image: url('/img/bedroom6.jfif');
 		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-		width: calc(50% + 20px);
-	}
-
-	.test {
-		border: 2px solid red;
+		max-width: 80%;
+		width: calc(100%);
 	}
 
 	/* Infos chambre à gauche */
 	.left {
 		color: #fff;
-		display: flex;
 		flex-direction: column;
 		padding: 40px;
 		position: relative;
-		width: calc(50% - 10px);
+		width: 100%;
 	}
 
 	.left h2 {
@@ -147,17 +158,41 @@ button a:hover {
 	}
 
 	.left h3 {
-		border-bottom: 1px solid #333;
 		font-weight: 400;
 		font-size: 16px;
 		margin: 30px 0 0;
 	}
 
 	.left p {
-		color: #E4B344;
+		color: #fff;
 		font-weight: 500;
-		font-size: 13px;
+		font-size: 16px;
 		margin: 3px 0;
+	}
+
+	div img {
+		display: none;
+	}
+
+	.left button {
+		background-color: transparent;
+		border: 1px solid #E4B344;
+		color: #fff;
+		cursor: pointer;
+		font-weight: 500;
+		padding: 15px 30px;
+		margin-top: auto;
+	}
+
+	.left::after {
+		border-top: 0 solid transparent;
+		border-bottom: 70vh solid transparent;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 100%;
+		height: 0%;
+		width: 0;
 	}
 
 	div img {
