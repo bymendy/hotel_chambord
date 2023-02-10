@@ -189,11 +189,23 @@ p {
     margin-top: 50px;
 }
 
-/* Background */
+/* Background & color */
 
 
-.bckg-c {
-    background: #ffffff;
+.color-c {
+    color: #589e99;
+}
+.color-v {
+    color: #649e58;
+}
+.color-r {
+    color: #b2519a;
+}
+.color-f {
+    color: #b94c25;
+}
+.color-bb {
+    color: #0a0a0a;
 }
 
 .bckg-b {
@@ -891,7 +903,7 @@ input[type="submit"] {
     }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
     .drop-down {
         display: none;
     }
@@ -993,7 +1005,7 @@ input[type="submit"] {
     }
 
     #titre-hotel {
-        margin-top: 550px;
+        margin-top: 450px;
         padding: 1rem;
     }
 
