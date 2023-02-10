@@ -462,27 +462,6 @@ nav li:hover ul {
 .nav-button.black .nav-bars:after {
     background-color: #E4B344;
 }
-
-.search-button {
-    right: 25px;
-}
-
-.search-button:hover .magnefying-glass:before {
-    border-color: #fff;
-}
-
-.search-button:hover .magnefying-glass:after {
-    background-color: #fff;
-}
-
-.search-button.black .magnefying-glass:before {
-    border-color: #272727;
-}
-
-.search-button.black .magnefying-glass:after {
-    background-color: #bbb;
-}
-
 /* Icone du Menu Burger  avnt transition */
 .nav-bars {
     width: 19px;
@@ -515,38 +494,6 @@ nav li:hover ul {
     top: 7px;
     width: 70%;
 }
-
-/* Icone de recherche */
-.magnefying-glass:before {
-    content: "";
-    display: false;
-    position: absolute;
-    margin: false;
-    top: 3px;
-    right: 3px;
-    height: 15px;
-    width: 15px;
-    border: 2px solid #E4B344;
-    border-radius: 100%;
-    transition: 0.35s ease;
-}
-
-.magnefying-glass:after {
-    content: "";
-    display: false;
-    position: absolute;
-    margin: false;
-    top: 20px;
-    left: 3px;
-    right: false;
-    bottom: false;
-    height: 2px;
-    width: 9px;
-    background-color: #E4B344;
-    transform: rotate(-42deg);
-    transition: 0.35s ease;
-}
-
 /* Carrousel */
 .carousel {
     margin: auto;
@@ -635,7 +582,6 @@ button.reserver[type="submit"] {
 
 #hotel-t {
     margin: top 6px;
-    ;
 }
 
 h1 {
@@ -682,7 +628,6 @@ section.style {
 .style {
     margin-top: 10px;
 }
-
 /************* MAIN *************/
 /*****PART  Chambres et gammes *****/
 main div a {
@@ -777,12 +722,14 @@ main div a {
 /* about */
 
 #section4 .pic {
-    height: 600px;
-    width: 600px;
-    background: url("/img/cuisine.jpeg") fixed no-repeat center;
+    max-width: 100%;
+    max-height: 100%;
+    background: url("/img/cuisine.jpeg");
     background-size: cover;
-    border-bottom: 600px solid transparent;
-    border-left: 100px solid #040606;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-left: -1%;
+    border-bottom: 350px solid transparent;
 }
 
 #section4 .box {
@@ -847,17 +794,11 @@ input[type="submit"] {
 /* Image de separation */
 #img_2separation {
     width: 100%;
-    height: 30vw;
+    height: 60vw;
     background-color: none;
     background-image: url(/img/city.jpeg);
-    background-attachment: fixed;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
-}
-
-#img_2separation:hover {
-    filter: grayscale(10%);
 }
 
 /* Responsive MENU NAV BURGER */
@@ -866,13 +807,11 @@ input[type="submit"] {
         display: none;
     }
 }
-
 @media (min-width: 580px) {
     .nav-button {
         display: none;
     }
 }
-
 /******** Responsive Styles ********/
 @media (min-width: 580px) {
     .cover-image {
@@ -930,7 +869,6 @@ input[type="submit"] {
 }
 
 @media (min-width: 600px) {
-
     #carouselExampleCaptions {
         width: 80%;
     }
@@ -938,7 +876,30 @@ input[type="submit"] {
     #news img {
         max-height: 60%;
     }
+    #section4 .pic {
+        max-width: 100%;
+        max-height: 100%;
+        background: url("/img/cuisine.jpeg") fixed no-repeat center;
+        background-size: cover;
+        border-bottom: 600px solid transparent;
+        border-left: 100px solid #040606;
+    }
+    #img_2separation {
+        width: 100%;
+        height: 30vw;
+        background-color: none;
+        background-image: url(/img/city.jpeg);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        filter: grayscale(100%);
+    }
+    
+    #img_2separation:hover {
+        filter: grayscale(10%);
+    }
 }
+
 
 @media (max-width: 768px) {
 

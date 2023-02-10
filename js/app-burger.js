@@ -1,12 +1,3 @@
-// $('menu a').click(function(){
- 
-//   $('.trigger').toggle();
-//   $('.menu').toggleClass('round');
-//   $('.close').toggle();
-//   $('.drop-down').toggleClass('.down');
-  
- 
-// });                    
 $(document).ready(function(){
     
   // Menu Function
@@ -15,14 +6,14 @@ $(document).ready(function(){
       return false;
   });
   
-  // Food Menu function
+  //  Menu function
   $('.nav-link.the-menu').click(function(){
       $('.nav-button, .side-nav, .nav-header, .nav-options').removeClass('nav-open');
       $('.menu-container').addClass('displayed');
       return false;
   });
   
-  // closing the menu-overlay
+  // closing du menu-overlay
   $('.close, .menu-container').click(function(){ $('.menu-container').removeClass('displayed'); return false;});
   // preventing clicks on the menu closing it for now because there is nothing inside yet.
   $('.tab.menu-tab').click(function(){ return false; }); 

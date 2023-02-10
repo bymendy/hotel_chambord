@@ -15,10 +15,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px;
+    margin:  auto;
     position: relative;
-    max-width: 840px;
+    max-width: 100%;
 }
 
 /* Left contact page */
@@ -193,7 +192,6 @@ hr {
 /* Begin Media Queries*/
 @media screen and (max-width: 1280px) {
     .contact-wrapper {
-        margin-top: 100px;
         max-width: 100%;
         flex-wrap: nowrap;
     }

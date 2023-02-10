@@ -5,7 +5,7 @@ var nextBtn = document.querySelector('.next');
 // initial index
 var index = 0;
 
-// function for auto rotation
+// function Pour la Rotation en automatique
 function rotate() {
   var slides = carousel.querySelectorAll('li');
   for (var i = 0; i < slides.length; i++) {
@@ -49,5 +49,5 @@ nextBtn.addEventListener('click', function() {
   setTimeout(rotate, 5000);
 });
 
-// start rotation
+// start function rotation de mon carrousel
 rotate();

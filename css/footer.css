@@ -100,19 +100,13 @@ select {
     justify-content: space-between;
     padding: 1.5rem 0;
 }
-.social-icons,
-.payment-methods {
-    margin-top: 2.5rem;
-    display: flex;
-    margin: auto;
-    text-align: center;
-    padding: auto;
+.col-6{
+    width: 100% !important;
 }
-.social-icons i,
-.payment-methods i {
-    font-size: 1.5rem;
-    color: #fff;
-    padding: .8rem 1rem;
+
+.payment-methods li, .social-icons li{
+    display: inline;
+    margin: 0 .5rem 0 .5rem;
 }
 
 .footer__content a:hover {
