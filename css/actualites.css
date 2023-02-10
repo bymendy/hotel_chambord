@@ -44,7 +44,7 @@
 }
 /* Image des articles PRESSE */
 img {
-    display: block;
+    /* display: block; */
     max-width: 100%;
 }
 
