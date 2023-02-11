@@ -112,6 +112,9 @@ select {
 .footer__content a:hover {
     opacity: .5;
 }
+.copyright {
+    color: #5a5959;
+}
 /* Responsive Style*/
 @media screen and (max-width: 900px) {
     p {

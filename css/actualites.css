@@ -42,9 +42,10 @@
     padding: 0 1.5rem;
     grid-column: span 5;
 }
+
 /* Image des articles PRESSE */
 img {
-    /* display: block; */
+
     max-width: 100%;
 }
 
@@ -191,12 +192,13 @@ img {
     max-height: 1rem;
     fill: #fff;
 }
+
 .podcast-progression {
     flex: 1;
     height: 8px;
     border-radius: 99em;
     background-color: #d9d4cd;
-    background-image: linear-gradient(to right,30%, #d9d4cd 30%, #d9d4cd 100%);
+    background-image: linear-gradient(to right, 30%, #d9d4cd 30%, #d9d4cd 100%);
 }
 
 .podcast-time {
@@ -218,16 +220,14 @@ img {
 
 /* Image HAUT DE PAGE */
 
-#separation_rs_news {
+#separation_rs_news img {
     width: 100%;
-    height: 40vw;
+    max-height: 50vw;
     background-color: none;
-    background-image: url(/img/cath.jpeg);
-    background-attachment: fixed;
-    background-size: 100% 100%;
+    /* background-image: url(/img/cath.jpeg);
+    background-size: 100% 100%; */
     background-repeat: no-repeat;
 }
-
 /* Partie ACTUALITES */
 #bloc_news {
     width: 100%;
@@ -259,27 +259,10 @@ img {
     background-color: none;
 }
 
-.emplacement_images_news {
-    position: absolute;
-    width: 100%;
-    height: 20vw;
-    background-color: none;
-}
-
-.liens_images_news {
-    position: absolute;
-    width: 100%;
-    height: 20vw;
-    background-color: none;
-}
-
-.liens_images_news:hover {
-    background-color: rgba(36, 43, 50, 0.5);
-}
 
 .images_news {
     width: 100%;
-    height: 20vw;
+    max-height: 50vw;
 }
 
 #emplacement_text_news {
@@ -289,42 +272,6 @@ img {
     margin-top: 70%;
     text-align: center;
 }
-
-.titres_news {
-    width: 80%;
-    text-align: center;
-    border-bottom: 1px solid rgba(107, 63, 66, 1);
-    padding-bottom: 5%;
-    padding-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    background-color: none;
-}
-
-.liens_titres_news {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgba(176, 133, 78, 1);
-    font-size: 1.5vw;
-    font-weight: 400;
-}
-
-.liens_titres_news:hover {
-    color: rgba(107, 63, 66, 1);
-}
-
-.body_news {
-    width: 100%;
-    height: auto;
-    background-color: none;
-    text-align: justify;
-    color: rgba(41, 31, 20, 1);
-    font-size: 1.4vw;
-    font-weight: 200;
-    line-height: 2.5vw;
-}
-
 /* Section News  */
 #news_une {
     width: 29%;
@@ -355,18 +302,6 @@ img {
     margin-top: 5%;
     text-align: justify;
 }
-
-#separateur {
-    padding-top: 80px;
-    padding-bottom: 2%;
-}
-
-/* Séparation Evenements - Vidéos */
-#separation_news_videos {
-    width: 102%;
-    height: 40vw;
-}
-
 /* Video pour se rendre à la Page Evenement */
 #conteneur_videos {
     width: 95%;
@@ -400,16 +335,14 @@ img {
     width: 42%;
     height: auto;
     margin-top: 3%;
-    margin-left: 3%;
 }
 
 /* Séparation Vidéos - About */
 #separation_videos_about {
     width: 102%;
-    height: 40vw;
+    height: 60vw;
     background-color: none;
-    background-image: url(/img/eiffel-tower.webp);
-    background-attachment: fixed;
+    background-image: url(/img/cahtedrale.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -443,5 +376,17 @@ img {
 @media (min-width: 1200px) {
     .magazine-column:nth-child(2) {
         grid-column: span 2;
+    }
+}
+
+@media (min-width: 600px) {
+    #separation_videos_about {
+        width: 102%;
+        height: 40vw;
+        background-color: none;
+        background-image: url(/img/cahtedrale.jpeg);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
     }
 }

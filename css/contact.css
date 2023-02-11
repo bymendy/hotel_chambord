@@ -5,7 +5,6 @@
 .section-header {
     text-align: center;
     margin: 0 auto;
-    padding: 40px 0;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 6px;
@@ -15,15 +14,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:  auto;
+    margin: 0 auto;
+    padding: 20px;
     position: relative;
-    max-width: 100%;
+    max-width: 840px;
 }
 
 /* Left contact page */
 .form-horizontal {
     /*float: left;*/
-    max-width: 400px;
+    max-width: 800;
     font-family: 'Lato';
     font-weight: 400;
 }
@@ -108,7 +108,6 @@ textarea {
     text-decoration: none;
 }
 
-
 /* Social Media Icons */
 .social-media-list {
     position: relative;
@@ -132,81 +131,42 @@ textarea {
     line-height: 60px;
     border-radius: 50%;
     color: #fff;
+    background-color: rgb(27, 27, 27);
     background-color: #E4B344;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
 
-.social-media-list li:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
-    transition: all .2s ease-in-out;
-}
-
-.social-media-list li:hover {
-    background-color: #F4F1EB;
-}
-
-.social-media-list li:hover:after {
-    opacity: 1;
-    transform: scale(1.12);
-    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
-}
-
-.social-media-list li:hover a {
-    color: #E4B344;
-}
-
-.copyright {
-    font: 200 14px 'Oswald', sans-serif;
-    color: #555;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-hr {
-    border-color: rgba(255, 255, 255, .6);
-}
 #img_city {
     width: 100%;
-    height: 30vw;
+    height: 40vw;
+    height: 40vw;
     background-color: none;
     background-image: url(/img/city1.jpeg);
-    background-attachment: fixed;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
 }
-#img_city:hover {
-    filter: grayscale(10%);
-}
+
 
 /* Begin Media Queries*/
 @media screen and (max-width: 1280px) {
     .contact-wrapper {
+        margin-top: 100px;
         max-width: 100%;
         flex-wrap: nowrap;
     }
-
 }
+
 @media screen and (max-width: 850px) {
     .contact-wrapper {
         display: flex;
         flex-direction: column;
     }
 
-    .direct-contact-container,
+    /* .direct-contact-container,
     .form-horizontal {
         margin: 0 auto;
-    }
+    } */
 
     .direct-contact-container {
         margin-top: 60px;
@@ -236,10 +196,8 @@ hr {
 
     .form-control,
     textarea {
-
         margin: 0 auto;
     }
-
 
     .name,
     .email,
@@ -268,11 +226,30 @@ hr {
         height: 55px;
         line-height: 55px;
     }
-
 }
 
 @media screen and (max-width: 410px) {
     .send-button {
         width: 99%;
+    }
+}
+
+@media (min-width: 600px) {
+
+    #img_city {
+        width: 100%;
+        height: 40vw;
+        height: 30vw;
+        background-color: none;
+        background-image: url(/img/city1.jpeg);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-left: -1%;
+        filter: grayscale(100%);
+    }
+
+    #img_city:hover {
+        filter: grayscale(10%);
     }
 }

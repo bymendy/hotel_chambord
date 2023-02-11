@@ -1,71 +1,136 @@
 /* Global config */
-h1, h2, h3, h4 {
-    text-transform: uppercase;
-    margin: 0 0 1.5rem;
-  }
-  /* Haut de page */
-  .logo {
-    width: 150px;
-    border-radius: 50%;
-    margin-top: 120px;
-    margin-bottom: 30px;
-    margin: auto;
-  }
-  .site-title {
-    font-size: calc(36px + 3vw); 
-  }
-  .site-subtitle {
-    font-weight: normal;
-    text-transform: none;
-    font-size: calc(1.5rem + 1vw);
-  }
-  .page-header {
-    margin: 48px 0;
-    text-align: center;
-  }
-  .box {
-    padding: 3rem;
-  }
-  .about {
-    border-top: 1px solid;
-  }
-  /* Textes dans l'image */
-  .quote {
-    padding: 4.5rem 0;
-    text-align: center;
-    background:  url(/img/cahtedrale.jpeg) no-repeat;
-    background-size:  cover;
-    background-attachment: fixed;
-  }
-  blockquote {
-    color: #fff;
-    font-size: calc(1rem + 2vw);
-  }
-  blockquote strong {
-    display: block;
-  }
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  margin: 0 0 1.5rem;
+}
+
+/* Haut de page */
+.logo {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  margin: auto;
+}
+
+.site-title {
+  font-size: calc(36px + 3vw);
+}
+
+.site-subtitle {
+  font-weight: normal;
+  text-transform: none;
+  font-size: calc(1.5rem + 1vw);
+}
+
+.page-header {
+  margin: 48px 0;
+  text-align: center;
+}
+
+.box {
+  padding: 3rem;
+}
+
+.about {
+  border-top: 1px solid;
+}
+
+/* Textes dans l'image */
+.quote {
+  padding: 4.5rem 0;
+  text-align: center;
+  background: url(/img/cahtedrale.jpeg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+blockquote {
+  color: #fff;
+  font-size: calc(1rem + 2vw);
+}
+
+blockquote strong {
+  display: block;
+}
 
 #titre-corporate {
-    margin-top: 50px;
+  margin-top: 50px;
 }
+
 /* PArt Qui sommes nous */
 
 .component-contacts-a {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #183456;
-    border-radius: 30px;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: .05em;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #183456;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: .05em;
 }
+
 /* Video Youtube */
-video { display: block; width: 100%; height: auto; }
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Image de separation */
 #img_separation {
+  width: 100%;
+  height: 60vw;
+  background-color: none;
+  background-image: url(/img/city-2.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+
+/* Responsive style */
+@media (min-width: 1280px) {
+  /* div {
+        flex-wrap: wrap;
+    } */
+
+  #section-corporate img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1250px) {
+  div {
+    flex-wrap: wrap;
+  }
+
+  #titre-corporate {
+    margin-top: 50px;
+  }
+
+  #concept {
+    top: -100px;
+  }
+
+
+  #section-corporate img {
+    max-width: 100%;
+  }
+
+  #corporate h2 {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 600px) {
+  #img_separation {
     width: 100%;
     height: 30vw;
     background-color: none;
@@ -74,38 +139,10 @@ video { display: block; width: 100%; height: auto; }
     background-size: 100% 100%;
     background-repeat: no-repeat;
     filter: grayscale(100%);
-}
-#img_separation:hover {
+  }
+
+  #img_separation:hover {
     filter: grayscale(10%);
-}
-/* Responsive style */
-@media (min-width: 1280px) {
-    /* div {
-        flex-wrap: wrap;
-    } */
-
-    #section-corporate img {
-        width: 50%;
-    }
-}
-
-@media (max-width: 1250px) {
-    div {
-        flex-wrap: wrap;
-    }
-    #titre-corporate {
-        margin-top: 50px;
-    }
-    #concept {
-        top: -100px;
-    }
-    
-
-    #section-corporate img {
-        max-width: 100%;
-    }
-    #corporate h2 {
-        width: 100%;
-    }
+  }
 
 }

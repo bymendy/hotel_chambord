@@ -437,12 +437,12 @@ nav li:hover ul {
 }
 
 .nav-button:hover .nav-bars {
-    background-color: #fff;
+    background-color: #E4B344;
 }
 
 .nav-button:hover .nav-bars:before,
 .nav-button:hover .nav-bars:after {
-    background-color: #fff;
+    background-color: #E4B344;
 }
 
 .nav-button.nav-open {
@@ -464,12 +464,11 @@ nav li:hover ul {
 }
 /* Icone du Menu Burger  avnt transition */
 .nav-bars {
-    width: 19px;
-    height: 2px;
-    background-color: #E4B344;
+    width: 30px;
+    height: 4px;
+    background-color: #000;
     left: 40%;
 }
-
 .nav-bars:before,
 .nav-bars:after {
     content: "";
@@ -482,7 +481,7 @@ nav li:hover ul {
     bottom: false;
     width: 130%;
     height: 100%;
-    background-color: #E4B344;
+    background-color: #000;
     transition: 0.35s ease;
 }
 
