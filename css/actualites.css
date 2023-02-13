@@ -389,4 +389,8 @@ img {
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
+    .images_news {
+        width: 100%;
+        max-height: 90vh;
+    }
 }

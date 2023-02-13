@@ -12,7 +12,7 @@ body::after {
 	background-size: cover;
 	background-position: center center;
 	content: '';
-	filter: blur(5px);
+	filter: blur(2px);
 	position: absolute;
 	height: 100vh;
 	width: 100vw;
@@ -28,16 +28,17 @@ body::after {
 	margin-top: 40%;
 }
 
-
 /* Infos chambre à gauche */
 .left {
-	color: #fff;
+	color: #000;
 	display: block;
 	flex-direction: column;
+	background-color: rgba(58, 57, 57, 0.5);
+	opacity: 1;
 	padding: 0px;
 	display: flex;
 	width: calc(50% - 10px);
-	height: 80vh;
+	height: 78vh;
 }
 
 .left h2 {
@@ -56,6 +57,7 @@ body::after {
 	font-weight: 500;
 	font-size: 13px;
 	margin: 3px 0;
+	opacity: 1;
 }
 
 /* Bouton confirmation reservation */
@@ -127,11 +129,12 @@ button a:hover {
 	}
 
 }
+
 @media screen and (max-width: 600px) {
 	.panel-container {
 		display: flex;
 		height: 80vh;
-		width: 80vw;
+		width: 100vw;
 		margin-top: 10%;
 	}
 
@@ -189,6 +192,7 @@ button a:hover {
 		height: 0%;
 		width: 0;
 	}
+
 	div img {
 		display: none;
 	}
@@ -227,6 +231,7 @@ button a:hover {
 		font-weight: 400;
 		font-size: 16px;
 		margin: 30px 0 0;
+
 	}
 
 	.left p {
@@ -263,5 +268,35 @@ button a:hover {
 
 	div img {
 		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+
+	body::after {
+		background-image: url('/img/bedroom6.jfif');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		content: '';
+		filter: blur(0px);
+		position: absolute;
+		height: 100vh;
+		width: 100vw;
+		z-index: -1;
+	}
+
+	.left p {
+		color: #fff;
+		font-weight: 300;
+		font-size: 17px;
+
+	}
+
+	.left {
+		color: #fff;
+		flex-direction: column;
+		padding: 1rem;
+		width: 100%;
 	}
 }
