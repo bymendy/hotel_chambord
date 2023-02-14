@@ -234,7 +234,7 @@ textarea {
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 780px) {
 
     #img_city {
         width: 100%;

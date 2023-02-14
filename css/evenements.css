@@ -84,7 +84,7 @@
     background-repeat: no-repeat;
 }
 /* Responsive style */
-@media (min-width: 600px) {
+@media (min-width: 780px) {
     #separation_video {
       width: 100%;
       height: 40vw;

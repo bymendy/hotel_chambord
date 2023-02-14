@@ -129,7 +129,7 @@ video {
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 780px) {
   #img_separation {
     width: 100%;
     height: 30vw;
